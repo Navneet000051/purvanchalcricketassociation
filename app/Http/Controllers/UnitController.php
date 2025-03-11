@@ -44,8 +44,8 @@ class UnitController extends Controller
             $data = Unit::select('id', 'name', 'secretary', 'mobileno', 'president', 'president_mobile', 'district', 'status')->orderBy('id', 'desc')->get();
             return DataTables::of($data)
                 ->addColumn('action', function ($row) {
-                    $btn = '<a href="edit_unit' . $row->id . '" ><i class="fa fa-edit" style="font-size:20px;color:#414189; margin:1rem"></i></a>';
-                    $btnDelete = '<a href="#" onClick = "deleteData(\'' . $row->id . '\')"><i class="fa fa-trash" style="font-size:20px;color:#f5325c"></i></a>';
+                    $btn = '<a href="edit_unit' . $row->id . '" ><i class="fa fa-edit"></i></a>';
+                    $btnDelete = ' <a href="#" onClick = "deleteData(\'' . $row->id . '\')"> <i class="fa fa-trash" style="color:#f5325c"></i></a>';
                     return $btn . '' . $btnDelete;
                 })
                 ->addColumn('status', function ($row) {

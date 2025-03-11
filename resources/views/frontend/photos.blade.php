@@ -37,7 +37,7 @@
                <div class="container">
                   <div class="mindle-heading text-center">
                      <h5>{{$caption->title}}</h5>
-                     <h1>{{date("d ", strtotime($caption->date))}}<span>{{date("F ", strtotime($caption->date))}}</span>{{date("y ", strtotime($caption->date))}}</h1>
+                     <h1>{{date("d ", strtotime($caption->date))}}<span>{{date("F ", strtotime($caption->date))}}</span>{{date("Y ", strtotime($caption->date))}}</h1>
                   </div>
                   <span class="bgi-text light-tsext01"> Photos</span>
 

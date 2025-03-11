@@ -60,14 +60,14 @@
 
               <div class="row g-3">
                 <input type="hidden" name="id" id="id">
-                <div class="col-lg-10">
+                <div class="col-lg-9">
                   <label>Caption <span class="text-danger">*</span></label>
                   <input type="hidden" class="form-control" id="id" name="id" value="{{$edit_news ? $edit_news->id : ''}}">
                   <input type="text" class="form-control" id="caption" name="caption" value="{{old('caption',$edit_news ? $edit_news->caption : '' )}}" placeholder="Enter caption">
                   <span style="color:red">@error('caption'){{ $message}} @enderror</span>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-3">
                   <label>Upload Image <span class="text-danger">*</span></label>
                   @if($edit_news)
                   <input type="file" class="form-control " id="imageS" name="imageS" value="{{old('image',$edit_news ? $edit_news->image : '')}}" accept="image/png, image/jpeg,image/jpg">

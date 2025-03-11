@@ -1,3394 +1,1290 @@
-
-  <style>
-        .our-small-details {
-            display: grid;
-            align-items: center;
-            width: 100%;
-            margin-top: 80px;
-            padding: 50px 0;
-            height: 292px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .our-small-details .bg-small-back02 img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-        }
-
-        .our-small-details .bg-small-back02 {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: -100px;
-            height: 800px;
-            display: inline-block;
-            width: 100%;
-        }
-    </style>
-
 @extends('frontend.template')
 @section('content')
-    <section class="float-start w-100 banner-part">
-      <div class="slider-banner">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="{{url('frontend/images/photos/1.jpg')}}" alt="images not found">
+<style>
+  .our-small-details {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+    padding: 50px 0;
+    height: 292px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .our-small-details .bg-small-back02 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .our-small-details .bg-small-back02 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -100px;
+    height: 800px;
+    display: inline-block;
+    width: 100%;
+  }
+</style>
+<section class="float-start w-100 banner-part">
+  <div class="slider-banner">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{{url('frontend/images/photos/1.jpg')}}" alt="images not found">
 
 
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInDown animated"> <span class="d-block"> 
-                          
-                        </span>
-                        </h1>
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInDown animated"> <span class="d-block">
 
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          About More!
-                        </a> -->
-                      </div>
-                    </div>
-                  
+                      </span>
+                    </h1>
+
+                    <p>
+                    </p>
                   </div>
-                    
-                  
                 </div>
+
               </div>
+
+
             </div>
-     
-             <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/c2.png')}}" alt="images not found">
+          </div>
+        </div>
 
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/c2.png')}}" alt="images not found">
 
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">-->
-                        <!--  <span>-->
-                        <!--    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">-->
-                        <!--      <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>-->
-                        <!--    </svg>-->
-                        <!--  </span>-->
-                        <!--  Schedule!-->
-                        <!--</a> -->
-                      </div>
-                    </div>
-                  
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+
+                    <p>
+                    </p>
                   </div>
-                    
-                  
                 </div>
+
               </div>
+
+
             </div>
-         
-             <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/c4.png')}}" alt="images not found">
+          </div>
+        </div>
 
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/c4.png')}}" alt="images not found">
 
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">-->
-                        <!--  <span>-->
-                        <!--    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">-->
-                        <!--      <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>-->
-                        <!--    </svg>-->
-                        <!--  </span>-->
-                        <!--  Schedule!-->
-                        <!--</a>-->
-                      </div>
-                    </div>
-                  
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+
+                    <p>
+                    </p>
                   </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-     
-            <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/2.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div>
-                    </div>
-                  
-                  </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/1_slider.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div>
-                    </div>
-                  
-                  </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/2_slider.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div> 
-                    </div>
-                  
-                  </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/3_slider.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div>
-                    </div>
-                  
-                  </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/4_slider.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div>
-                    </div>
-                  
-                  </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/5_slider.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div>
-                    </div>
-                  
-                  </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/6_slider.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div>
-                    </div>
-                  
-                  </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/7_slider.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div>
-                    </div>
-                  
-                  </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/8_slider.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div>
-                    </div>
-                  
-                  </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/9_slider.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div>
-                    </div>
-                  
-                  </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/10_slider.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div>
-                    </div>
-                  
-                  </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/11_slider.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div>
-                    </div>
-                  
-                  </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/12_slider.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div>
-                    </div>
-                  
-                  </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/13_slider.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div>
-                    </div>
-                  
-                  </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/14_slider.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div>
-                    </div>
-                  
-                  </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/15_slider.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div>
-                    </div>
-                  
-                  </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/16_slider.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div>
-                    </div>
-                  
-                  </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/17_slider.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div>
-                    </div>
-                  
-                  </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-                       <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/18_slider.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div>
-                    </div>
-                  
-                  </div>
-                    
-                  
-                </div>
-              </div>
-            </div>
-                       <div class="carousel-item">
-              <img src="{{url('frontend/images/photos/19_slider.jpg')}}" alt="images not found">
-
-              <div class="cover">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div class="header-content">
-                        <h1 class="fadeInUp animated">
-                          <span class="d-block">
-                        </span>
-                        </h1>
-
-                        <p>
-                        </p>
-                        
-                        <!-- <a href="#" class="btn btn-comon-btn">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                            </svg>
-                          </span>
-                          Schedule!
-                        </a> -->
-                      </div>
-                    </div>
-                  
-                  </div>
-                    
-                  
                 </div>
               </div>
             </div>
           </div>
-        
         </div>
 
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/2.jpg')}}" alt="images not found">
+
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+
+                    <p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/1_slider.jpg')}}" alt="images not found">
+
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+
+                    <p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/2_slider.jpg')}}" alt="images not found">
+
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+
+                    <p>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/3_slider.jpg')}}" alt="images not found">
+
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+
+                    <p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/4_slider.jpg')}}" alt="images not found">
+
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+
+                    <p>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/5_slider.jpg')}}" alt="images not found">
+
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+
+                    <p>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/6_slider.jpg')}}" alt="images not found">
+
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+
+                    <p>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/7_slider.jpg')}}" alt="images not found">
+
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+
+                    <p>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/8_slider.jpg')}}" alt="images not found">
+
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+
+                    <p>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/9_slider.jpg')}}" alt="images not found">
+
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+
+                    <p>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/10_slider.jpg')}}" alt="images not found">
+
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+
+                    <p>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/11_slider.jpg')}}" alt="images not found">
+
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+                    <p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/12_slider.jpg')}}" alt="images not found">
+
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+                    <p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/13_slider.jpg')}}" alt="images not found">
+
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+                    <p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/14_slider.jpg')}}" alt="images not found">
+
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+                    <p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/15_slider.jpg')}}" alt="images not found">
+
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+
+                    <p>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/16_slider.jpg')}}" alt="images not found">
+
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+
+                    <p>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/17_slider.jpg')}}" alt="images not found">
+
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+
+                    <p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/18_slider.jpg')}}" alt="images not found">
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+
+                    <p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url('frontend/images/photos/19_slider.jpg')}}" alt="images not found">
+          <div class="cover">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-content">
+                    <h1 class="fadeInUp animated">
+                      <span class="d-block">
+                      </span>
+                    </h1>
+                    <p>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+</section>
+<section class="calltotop-area">
+  <div class="container-fluid ">
+    <div class="callto-section">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-12 call-left no-padding px-0">
+          <div class="news blue d-flex">
+            <span class="mw-110">Latest News</span><span class="text1">
+              <marquee onmouseover="this.stop();" onmouseout="this.start();"> <a href="" class="text-white">No Updates!</a>
+              </marquee>
+            </span>
 
-
-
-      <!--<button type="button" class="btn btn-member" data-bs-toggle="modal" data-bs-target="#memberModal"> Become A Member </button>-->
-
-    
-          
-    </section>
-    
-    <section class="calltotop-area">
-<div class="container-fluid ">
-<div class="callto-section">
-<div class="row justify-content-center align-items-center">
-<div class="col-lg-12 call-left no-padding px-0">
-<div class="news blue d-flex">
-<span class="mw-110">Latest News</span><span class="text1" ><marquee onmouseover="this.stop();" onmouseout="this.start();"> <a href="" class="text-white">No Updates!</a> 
-</marquee></span>
-
-</div>
-</div>
-</div>
-</div>
-</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="float-start w-100 body-part pt-0">
+  <div class="about-sec-home">
+    <span class="bgi-text light-tsext01"> About</span>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-lg-2">
+        <div class="col text-abouy">
 
+          <h5>Our History</h5>
+          <h1> About Our <span> Association </span></h1>
+          <p class="my-3"> The primary objective of the Purvanchal
+            Cricket Association (PCA) is to provide a comprehensive online platform for
+            cricket enthusiasts, players, coaches, officials, and fans to access information,
+            resources, and services related to cricket. The association aims to promote the
+            sport, facilitate communication and collaboration among stakeholders, and
+            enhance the overall cricketing experience.</p>
 
-  <!--<div class="top-list-turnament">-->
-        
-  <!--  <div class="dots-bg">-->
-          
-  <!--  </div>-->
-  <!--  <div class="container">-->
-  <!--       <div class="mindle-heading text-center">-->
-           
-  <!--           <h5> Upcoming Match </h5>-->
-  <!--           <h1> TopListed Tournament</h1>-->
-  <!--       </div>-->
-  <!--       <span class="bgi-text light-tsext01"> Matches</span>-->
-
-        
-  <!--           <div class="upcomin-matches owl-carousel owl-theme">-->
-  <!--              <div class="comon-matchbn">-->
-
-                    
-                    
-  <!--                  <a href="#" class="topikn-div">-->
-  <!--                    <div class="top-bg-backgrouh">-->
-  <!--                      <figure>-->
-  <!--                        <img src="{{url('frontend/images/st01.jpg')}}" alt="pnhm"/>-->
-  <!--                      </figure>-->
-  <!--                      <div class="conty">-->
-  
-                        
-  <!--                      <h4 class="text-center lega-text mt-0 mb-2"> United Leagues </h4>-->
-  <!--                      <span class="btn time-d05 d-table mx-auto"> 21 Mar 2023 </span>-->
-  <!--                      <h6 class="text-center text-white mb-3">Sidney, North America</h6>-->
-  <!--                     </div>-->
-  <!--                    </div>-->
-                      
-  <!--                    <div class="row align-items-center mt-4  justify-content-center">-->
-  <!--                      <div class="col-5">-->
-  <!--                          <div class="cul-div">-->
-  <!--                              <figure class="">-->
-  <!--                                  <img src="{{url('frontend/images/r3.png')}}" alt="club">-->
-  <!--                              </figure>-->
-  <!--                              <h6 class="text-center">-->
-                                 
-  <!--                                Spartams-->
-  <!--                              </h6>-->
-  <!--                          </div>-->
-  <!--                      </div>-->
-
-  <!--                      <div class="col-2">-->
-  <!--                          <h1 class="vs-text"> VS </h1>-->
-  <!--                      </div>-->
-  <!--                      <div class="col-5">-->
-                          
-  <!--                        <div class="cul-div">-->
-                            
-  <!--                          <figure class="">-->
-  <!--                              <img src="{{url('frontend/images/r4.png')}}" alt="club">-->
-  <!--                          </figure>-->
-
-  <!--                          <h6 class="text-center">-->
-  <!--                            RedBull-->
-  <!--                          </h6>-->
-                            
-  <!--                        </div>-->
-  <!--                      </div>-->
-                        
-  <!--                    </div>-->
-  <!--                  </a>-->
-
-  <!--                  <div class="more-details-div text-center">-->
-                                                
-  <!--                     <a href="#" class="btn btn-book-btn"> Book Ticket  <span>-->
-  <!--                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">-->
-  <!--                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>-->
-  <!--                      </svg>-->
-  <!--                     </span> </a>-->
-  <!--                  </div>-->
-
-  <!--              </div>-->
-
-
-  <!--              <div class="comon-matchbn">-->
-
-  <!--            <a href="#" class="topikn-div">-->
-  <!--                  <div class="top-bg-backgrouh">-->
-  <!--                    <figure>-->
-  <!--                      <img src="{{url('frontend/images/st01.jpg')}}" alt="pnhm"/>-->
-  <!--                    </figure>-->
-  <!--                    <div class="conty">-->
-
-                      
-  <!--                    <h4 class="text-center lega-text mt-0 mb-2"> United Leagues </h4>-->
-  <!--                    <span class="btn time-d05 d-table mx-auto"> 21 Mar 2023 </span>-->
-  <!--                    <h6 class="text-center text-white mb-3">Sidney, North America</h6>-->
-  <!--                   </div>-->
-  <!--                  </div>-->
-                    
-  <!--                  <div class="row align-items-center mt-4  justify-content-center">-->
-  <!--                    <div class="col-5">-->
-  <!--                        <div class="cul-div">-->
-  <!--                            <figure class="">-->
-  <!--                                <img src="{{url('frontend/images/r4.png')}}" alt="club">-->
-  <!--                            </figure>-->
-  <!--                            <h6 class="text-center">-->
-                               
-  <!--                              Spartams-->
-  <!--                            </h6>-->
-  <!--                        </div>-->
-  <!--                    </div>-->
-
-  <!--                    <div class="col-2">-->
-  <!--                        <h1 class="vs-text"> VS </h1>-->
-  <!--                    </div>-->
-  <!--                    <div class="col-5">-->
-                        
-  <!--                      <div class="cul-div">-->
-                          
-  <!--                        <figure class="">-->
-  <!--                            <img src="{{url('frontend/images/r3.png')}}" alt="club">-->
-  <!--                        </figure>-->
-
-  <!--                        <h6 class="text-center">-->
-  <!--                          RedBull-->
-  <!--                        </h6>-->
-                          
-  <!--                      </div>-->
-  <!--                    </div>-->
-                      
-  <!--                  </div>-->
-  <!--                </a>-->
-
-  <!--                <div class="more-details-div text-center">-->
-                                              
-  <!--                   <a href="#" class="btn btn-book-btn"> Book Ticket  -->
-  <!--                    <span>-->
-  <!--                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">-->
-  <!--                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>-->
-  <!--                      </svg>-->
-  <!--                     </span>-->
-  <!--                   </a>-->
-  <!--                </div>-->
-
-  <!--              </div>-->
-
-  <!--              <div class="comon-matchbn">-->
-
-                    
-                    
-  <!--                <a href="#" class="topikn-div">-->
-  <!--                  <div class="top-bg-backgrouh">-->
-  <!--                    <figure>-->
-  <!--                      <img src="{{url('frontend/images/st01.jpg')}}" alt="pnhm"/>-->
-  <!--                    </figure>-->
-  <!--                    <div class="conty">-->
-
-                      
-  <!--                    <h4 class="text-center lega-text mt-0 mb-2"> United Leagues </h4>-->
-  <!--                    <span class="btn time-d05 d-table mx-auto"> 21 Mar 2023 </span>-->
-  <!--                    <h6 class="text-center text-white mb-3">Sidney, North America</h6>-->
-  <!--                   </div>-->
-  <!--                  </div>-->
-                    
-  <!--                  <div class="row align-items-center mt-4  justify-content-center">-->
-  <!--                    <div class="col-5">-->
-  <!--                        <div class="cul-div">-->
-  <!--                            <figure class="">-->
-  <!--                                <img src="{{url('frontend/images/r1.png')}}" alt="club">-->
-  <!--                            </figure>-->
-  <!--                            <h6 class="text-center">-->
-                               
-  <!--                              Spartams-->
-  <!--                            </h6>-->
-  <!--                        </div>-->
-  <!--                    </div>-->
-
-  <!--                    <div class="col-2">-->
-  <!--                        <h1 class="vs-text"> VS </h1>-->
-  <!--                    </div>-->
-  <!--                    <div class="col-5">-->
-                        
-  <!--                      <div class="cul-div">-->
-                          
-  <!--                        <figure class="">-->
-  <!--                            <img src="{{url('frontend/images/r2.png')}}" alt="club">-->
-  <!--                        </figure>-->
-
-  <!--                        <h6 class="text-center">-->
-  <!--                          RedBull-->
-  <!--                        </h6>-->
-                          
-  <!--                      </div>-->
-  <!--                    </div>-->
-                      
-  <!--                  </div>-->
-  <!--                </a>-->
-
-  <!--                <div class="more-details-div text-center">-->
-                                              
-  <!--                   <a href="#" class="btn btn-book-btn"> Book Ticket  -->
-  <!--                    <span>-->
-  <!--                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">-->
-  <!--                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>-->
-  <!--                      </svg>-->
-  <!--                     </span>-->
-  <!--                   </a>-->
-  <!--                </div>-->
-
-  <!--              </div>-->
-
-  <!--              <div class="comon-matchbn">-->
-
-                    
-                    
-  <!--                <a href="#" class="topikn-div">-->
-                    
-  <!--                  <div class="top-bg-backgrouh">-->
-  <!--                    <figure>-->
-  <!--                      <img src="{{url('frontend/images/st01.jpg')}}" alt="pnhm"/>-->
-  <!--                    </figure>-->
-  <!--                    <div class="conty">-->
-
-                      
-  <!--                    <h4 class="text-center lega-text mt-0 mb-2"> United Leagues </h4>-->
-  <!--                    <span class="btn time-d05 d-table mx-auto"> 21 Mar 2023 </span>-->
-  <!--                    <h6 class="text-center text-white mb-3">Sidney, North America</h6>-->
-  <!--                   </div>-->
-  <!--                  </div>-->
-                     
-                    
-  <!--                  <div class="row align-items-center  justify-content-center">-->
-  <!--                    <div class="col-5">-->
-  <!--                        <div class="cul-div">-->
-  <!--                            <figure class="">-->
-  <!--                                <img src="{{url('frontend/images/r1.png')}}" alt="club">-->
-  <!--                            </figure>-->
-  <!--                            <h6 class="text-center">-->
-                               
-  <!--                              Spartams-->
-  <!--                            </h6>-->
-  <!--                        </div>-->
-  <!--                    </div>-->
-
-  <!--                    <div class="col-2">-->
-  <!--                        <h1 class="vs-text"> VS </h1>-->
-  <!--                    </div>-->
-  <!--                    <div class="col-5">-->
-                        
-  <!--                      <div class="cul-div">-->
-                          
-  <!--                        <figure class="">-->
-  <!--                            <img src="{{url('frontend/images/r3.png')}}" alt="club">-->
-  <!--                        </figure>-->
-
-  <!--                        <h6 class="text-center">-->
-  <!--                          RedBull-->
-  <!--                        </h6>-->
-                          
-  <!--                      </div>-->
-  <!--                    </div>-->
-                      
-  <!--                  </div>-->
-  <!--                </a>-->
-
-  <!--                <div class="more-details-div text-center">-->
-                                              
-  <!--                   <a href="#" class="btn btn-book-btn"> Book Ticket  -->
-  <!--                    <span>-->
-  <!--                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">-->
-  <!--                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>-->
-  <!--                      </svg>-->
-  <!--                     </span>-->
-  <!--                   </a>-->
-  <!--                </div>-->
-
-  <!--              </div>-->
-
-                
-
-  <!--           </div>-->
-
-  <!--      <div class="bags-side ">-->
-  <!--         <img src="{{url('frontend/images/toppng.com-ss-elite-cricket-helmet-cricket-helmet-701x523.png')}}" alt="gbn"/>-->
-  <!--      </div>-->
-         
-  <!--  </div>-->
-
-    
-   
-  <!-- </div>-->
-
-    <!--<div class="next-match-part d-inline-block w-100">-->
-    <!--    <div class="dots-bg">-->
-          
-    <!--    </div>-->
-    <!--    <div class="container">-->
-    <!--        <div class="row row-cols-1 row-cols-lg-2 g-5 g-lg-5 align-items-center">-->
-    <!--          <div class="col">-->
-    <!--            <div class="comon-leadborad">-->
-    <!--                <div class="d-flex align-items-center justify-content-between mb-4">-->
-    <!--                  <div class="comon-headding">-->
-    <!--                      <h2> Statistics</h2>-->
-    <!--                  </div>-->
-                      
-    <!--                  <a href="#" class="btn link-btn">-->
-    <!--                    See All Results-->
-    <!--                  </a>-->
-    <!--              </div>-->
-    <!--              <table class="table">-->
-    <!--                <thead>-->
-    <!--                  <tr>-->
-    <!--                    <th scope="col">N</th>-->
-    <!--                    <th scope="col">Club</th>-->
-    <!--                    <th scope="col">W</th>-->
-    <!--                    <th scope="col">L</th>-->
-    <!--                    <th scope="col">PTS</th>-->
-    <!--                    <th scope="col">PA</th>-->
-    <!--                    <th scope="col">TD</th>-->
-    <!--                  </tr>-->
-    <!--                </thead>-->
-    <!--                <tbody>-->
-    <!--                  <tr>-->
-    <!--                    <td>1</td>-->
-    <!--                    <td>Avengers</td>-->
-    <!--                    <td>23</td>-->
-    <!--                    <td>10</td>-->
-    <!--                    <td>20</td>-->
-    <!--                    <td>70</td>-->
-    <!--                    <td>0</td>-->
-    <!--                  </tr>-->
-    <!--                  <tr>-->
-    <!--                    <td>2</td>-->
-    <!--                    <td>RedBull</td>-->
-    <!--                    <td>23</td>-->
-    <!--                    <td>10</td>-->
-    <!--                    <td>20</td>-->
-    <!--                    <td>70</td>-->
-    <!--                    <td>0</td>-->
-    <!--                  </tr>-->
-
-    <!--                  <tr>-->
-    <!--                    <td>3</td>-->
-    <!--                    <td>ActionX</td>-->
-    <!--                    <td>23</td>-->
-    <!--                    <td>10</td>-->
-    <!--                    <td>20</td>-->
-    <!--                    <td>70</td>-->
-    <!--                    <td>0</td>-->
-    <!--                  </tr>-->
-
-    <!--                  <tr>-->
-    <!--                    <td>4</td>-->
-    <!--                    <td>YBluster</td>-->
-    <!--                    <td>23</td>-->
-    <!--                    <td>10</td>-->
-    <!--                    <td>20</td>-->
-    <!--                    <td>70</td>-->
-    <!--                    <td>0</td>-->
-    <!--                  </tr>-->
-
-    <!--                  <tr>-->
-    <!--                    <td>5</td>-->
-    <!--                    <td>FC United</td>-->
-    <!--                    <td>23</td>-->
-    <!--                    <td>10</td>-->
-    <!--                    <td>20</td>-->
-    <!--                    <td>70</td>-->
-    <!--                    <td>0</td>-->
-    <!--                  </tr>-->
-
-    <!--                  <tr>-->
-    <!--                    <td>6</td>-->
-    <!--                    <td>RealBlust</td>-->
-    <!--                    <td>23</td>-->
-    <!--                    <td>10</td>-->
-    <!--                    <td>20</td>-->
-    <!--                    <td>70</td>-->
-    <!--                    <td>0</td>-->
-    <!--                  </tr>-->
-    <!--                  <tr>-->
-    <!--                    <td>7</td>-->
-    <!--                    <td>AVO Bull</td>-->
-    <!--                    <td>23</td>-->
-    <!--                    <td>10</td>-->
-    <!--                    <td>20</td>-->
-    <!--                    <td>70</td>-->
-    <!--                    <td>0</td>-->
-    <!--                  </tr>-->
-                      
-                      
-    <!--                </tbody>-->
-    <!--              </table>-->
-    <!--            </div>-->
-    <!--          </div>-->
-                <!--<div class="col">-->
-                <!--    <div class="next-match05 d-inline-block w-100">-->
-                <!--      <figure class="m-0 bgh">-->
-                <!--         <img src="{{url('frontend/images/cricket-clip.png')}}" alt="club"/>-->
-                <!--      </figure>-->
-                <!--      <div class="d-flex align-items-center justify-content-center mb-4">-->
-                <!--        <div class="comon-headding">-->
-                <!--            <h2>Next Matches </h2>-->
-                <!--        </div>-->
-                        
-                        
-                <!--      </div>-->
-
-                <!--      <div class="comon-match-sec w-100 d-inline-block">-->
-                <!--        <h6 class="text-center text-white"> June 15, 2025 19:00  <span class="d-block mt-2"> New Expo Stadium, NYK </span> </h6>-->
-                <!--        <div class="comon-match-div">-->
-                <!--            <div class="row align-items-center  justify-content-center">-->
-                <!--              <div class="col-5">-->
-                <!--                  <div class="cul-div">-->
-                <!--                      <figure class="m-0">-->
-                <!--                          <img src="{{url('frontend/images/r2.png')}}" alt="club"/>-->
-                <!--                      </figure>-->
-                <!--                      <h6 class="text-center text-white">-->
-                <!--                        <span class="d-block"> USA </span> -->
-                <!--                        Spartams-->
-                <!--                      </h6>-->
-                <!--                  </div>-->
-                <!--              </div>-->
-
-                <!--              <div class="col-2">-->
-                <!--                  <h1 class="reuli-tc text-center text-white"> VS </h1>-->
-                <!--              </div>-->
-                <!--              <div class="col-5">-->
-                                
-                <!--                <div class="cul-div">-->
-                                
-                <!--                  <figure class="m-0">-->
-                <!--                      <img src="{{url('frontend/images/r4.png')}}" alt="club"/>-->
-                <!--                  </figure>-->
-                <!--                  <h6 class="text-center text-white">-->
-                <!--                    <span class="d-block"> UAE </span> -->
-                <!--                    RedBull-->
-                <!--                  </h6>-->
-                                  
-                <!--                </div>-->
-                <!--              </div>-->
-                              
-                <!--            </div>-->
-                <!--        </div>-->
-                <!--        <div class="num-txet-divb d-flex align-items-center justify-content-center">-->
-                          
-                <!--          <a href="#" class="btn book-btn"> Book Ticket </a>-->
-                <!--          <a href="#" class="btn strm-btn ms-3"> Streaming </a>-->
-                <!--        </div>-->
-                <!--      </div>-->
-                <!--    </div>-->
-                <!--</div>-->
-                
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</div>-->
-
-   
-
-    <div class="about-sec-home">
-      <span class="bgi-text light-tsext01"> About</span>
-        <div class="container">
-          <div class="row row-cols-1 row-cols-lg-2">
-              <div class="col text-abouy">
-              
-                <h5>Our History</h5>
-                <h1> About Our <span> Association </span></h1>
-                <p class="my-3"> The primary objective of the Purvanchal
-    Cricket Association (PCA) is to provide a comprehensive online platform for
-    cricket enthusiasts, players, coaches, officials, and fans to access information,
-    resources, and services related to cricket. The association aims to promote the
-    sport, facilitate communication and collaboration among stakeholders, and
-    enhance the overall cricketing experience.</p>
-
-              <!--<h6> It has survived <span>100+ win</span> not only five centuries, but -->
-              <!--  also the leap into <span>30+ tropy</span> electronic typesetting </h6>-->
-              
-              <a href="{{url('about')}}" class="btn btn-about">
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"></path>
-                  </svg>
-                </span>
-                About More</a>
-
-              </div>
-
-              <div class="col">
-                <div class="about-1imgn">
-                  <img src="{{url('frontend/images/pngaaa.com-1165094.png')}}" alt="bnm"/>
-                </div>
-              </div>
-          </div> 
+          <a href="{{url('about')}}" class="btn btn-about">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"></path>
+              </svg>
+            </span>About More</a>
         </div>
-
-        
-    </div>
-    
-
-<div class="our-small-details">
-        <div class="container">
-            <div class="">
-                <div class="col d-lg-grid justify-content-lg-end">
-                    <div class="comon-divbn d-md-flex align-items-center">
-                        <figure>
-                            <img src="{{url('frontend/images/demo12.png')}}" alt="pnbm" />
-                        </figure>
-                        <div class="right-dibvb">
-                            <h2><?php echo $count+10032556;?></h2>
- 
-                            <h6>Member Views</h6> 
-                        </div>
-                    </div>
-                </div>
-            </div>  
-        </div>
-        <div class="bg-small-back02">
-            <img src="{{url('frontend/images/parallax-1.png')}}" alt="sportsfbn" />
-        </div>
-
-
-       
-
-    </div>
-    <!--<div class="match-result-div">-->
-    
-    <!--    <div class="container">-->
-    <!--      <div class="mindle-heading text-center">-->
-    <!--        <h5 class="text-white"> Fixtures </h5>-->
-    <!--        <h1 class="text-white"> Latest Match Result</h1>-->
-    <!--      </div>-->
-    <!--      <span class="bgi-text light-tsext01"> Results</span>-->
-
-       
-    <!--          <div class="col-lg-9 mt-5 mx-auto">-->
-    <!--            <div class="result-sliden owl-carousel owl-theme">-->
-                  
-    <!--              <div class="comon-results-div">-->
-    <!--                <div class="leag-name text-center">-->
-    <!--                  <h2>United FC Cup </h2>-->
-                      
-                      
-    <!--                </div>-->
-    <!--                <div class="bodyu-divbn">-->
-    <!--                  <h4 class="text-center text-white"> <span> Roethlon Dan </span> <span class="text-white mx-4"> <i class="fas fa-minus"></i> </span> <span> James Rider </span>  </h4>-->
-    <!--                  <span class="btn time-d05 d-table mx-auto"> 21 Mar 2023 </span>-->
-    <!--                  <h6 class="text-center text-white"> 06:00Court 01 </h6>-->
-    <!--                  <h3 class="text-white text-center mt-2 justify-content-center">-->
-    <!--                     <span class="text-center"> 160/5 -->
-                       
-    <!--                    </span> -->
-    <!--                    <span>:</span>-->
-    <!--                    <span class="text-center"> 152/5 -->
-                        
-    <!--                    </span>-->
-    <!--                    <b class="d-block">20 Over</b>-->
-    <!--                   </h3>-->
-
-    <!--                  <div class="row align-items-center">-->
-    <!--                    <div class="col-5">-->
-    <!--                      <div class="club-items d-flex align-items-center">-->
-    <!--                          <figure class="m-0">-->
-    <!--                              <img src="{{url('frontend/images/Vector-Smart-Object1.png')}}" alt="bn"/>-->
-    <!--                          </figure>-->
-    <!--                          <h5 class="ms-3"> Roethlon -->
-    <!--                            <span class="d-block">South America</span>-->
-    <!--                          </h5>-->
-    <!--                      </div>-->
-    <!--                    </div>-->
-      
-    <!--                    <div class="col-2">-->
-    <!--                      <div class="d-none d-lg-block">-->
-    <!--                        <div class="vds-resut text-center">-->
-    <!--                          <div class="golas-divb mb-2">-->
-    <!--                              <h3>02 : 01</h3>-->
-    <!--                          </div>-->
-    <!--                          <div class="watch-div">-->
-    <!--                             <a href="#" class="btn btn-wtch1">-->
-    <!--                              <i class="fas fa-play"></i> Match Highligt-->
-    <!--                             </a>-->
-    <!--                             <p class="mt-2 text-white"> <i class="fas fa-map-marker-alt"></i> Edens,Melbourne</p>-->
-    <!--                          </div>-->
-    <!--                        </div>-->
-    <!--                      </div>-->
-    <!--                      <div class="d-block d-lg-none">-->
-    <!--                         <h3 class="text-white text-center">VS</h3>-->
-    <!--                      </div>-->
-                         
-    <!--                    </div>-->
-
-    <!--                    <div class="col-5">-->
-    <!--                      <div class="club-items d-flex align-items-center">-->
-    <!--                          <figure class="m-0">-->
-    <!--                              <img src="{{url('frontend/images/6288d1fe92d55dad82ab2207.png')}}" alt="bn"/>-->
-    <!--                          </figure>-->
-    <!--                          <h5> Roethlon -->
-    <!--                            <span class="d-block">South America</span>-->
-    <!--                          </h5>-->
-    <!--                      </div>-->
-    <!--                    </div>-->
-    <!--                  </div>-->
-
-    <!--                  <div class="d-lg-none d-block">-->
-    <!--                    <div class="vds-resut text-center my-4">-->
-    <!--                      <div class="golas-divb mb-2">-->
-    <!--                          <h3>02 : 01</h3>-->
-    <!--                      </div>-->
-    <!--                      <div class="watch-div">-->
-    <!--                         <a href="#" class="btn btn-wtch1">-->
-    <!--                          <i class="fas fa-play"></i> Match Highligt-->
-    <!--                         </a>-->
-    <!--                         <p class="mt-2 text-white"> <i class="fas fa-map-marker-alt"></i> Edens,Melbourne</p>-->
-    <!--                      </div>-->
-    <!--                    </div>-->
-    <!--                  </div>-->
-                      
-    <!--                </div>-->
-                  
-
-                   
-    <!--              </div>-->
-
-
-    <!--              <div class="comon-results-div">-->
-    <!--                <div class="leag-name text-center">-->
-    <!--                  <h2>United FC Cup </h2>-->
-                      
-                      
-    <!--                </div>-->
-    <!--                <div class="bodyu-divbn">-->
-    <!--                  <h4 class="text-center text-white"> <span> Roethlon Dan </span> <span class="text-white mx-4"> <i class="fas fa-minus"></i> </span> <span> James Rider </span>  </h4>-->
-    <!--                  <span class="btn time-d05 d-table mx-auto"> 21 Mar 2023 </span>-->
-    <!--                  <h6 class="text-center text-white"> 06:00Court 01 </h6>-->
-    <!--                  <h3 class="text-white text-center mt-2 justify-content-center">-->
-    <!--                     <span class="text-center"> 160/5 -->
-                       
-    <!--                    </span> -->
-    <!--                    <span>:</span>-->
-    <!--                    <span class="text-center"> 152/5 -->
-                        
-    <!--                    </span>-->
-    <!--                    <b class="d-block">20 Over</b>-->
-    <!--                   </h3>-->
-
-    <!--                  <div class="row align-items-center">-->
-    <!--                    <div class="col-5">-->
-    <!--                      <div class="club-items d-flex align-items-center">-->
-    <!--                          <figure class="m-0">-->
-    <!--                              <img src="{{url('frontend/images/Vector-Smart-Object1.png')}}" alt="bn"/>-->
-    <!--                          </figure>-->
-    <!--                          <h5 class="ms-3"> Roethlon -->
-    <!--                            <span class="d-block">South America</span>-->
-    <!--                          </h5>-->
-    <!--                      </div>-->
-    <!--                    </div>-->
-      
-    <!--                    <div class="col-2">-->
-    <!--                      <div class="d-none d-lg-block">-->
-    <!--                        <div class="vds-resut text-center">-->
-    <!--                          <div class="golas-divb mb-2">-->
-    <!--                              <h3>02 : 01</h3>-->
-    <!--                          </div>-->
-    <!--                          <div class="watch-div">-->
-    <!--                             <a href="#" class="btn btn-wtch1">-->
-    <!--                              <i class="fas fa-play"></i> Match Highligt-->
-    <!--                             </a>-->
-    <!--                             <p class="mt-2 text-white"> <i class="fas fa-map-marker-alt"></i> Edens,Melbourne</p>-->
-    <!--                          </div>-->
-    <!--                        </div>-->
-    <!--                      </div>-->
-    <!--                      <div class="d-block d-lg-none">-->
-    <!--                         <h3 class="text-white text-center">VS</h3>-->
-    <!--                      </div>-->
-                         
-    <!--                    </div>-->
-
-
-    <!--                    <div class="col-5">-->
-    <!--                      <div class="club-items d-flex align-items-center">-->
-    <!--                          <figure class="m-0">-->
-    <!--                              <img src="{{url('frontend/images/6288d1fe92d55dad82ab2207.png')}}" alt="bn"/>-->
-    <!--                          </figure>-->
-    <!--                          <h5> Roethlon -->
-    <!--                            <span class="d-block">South America</span>-->
-    <!--                          </h5>-->
-    <!--                      </div>-->
-    <!--                    </div>-->
-    <!--                  </div>-->
-
-
-    <!--                  <div class="d-lg-none d-block">-->
-    <!--                    <div class="vds-resut text-center my-4">-->
-    <!--                      <div class="golas-divb mb-2">-->
-    <!--                          <h3>02 : 01</h3>-->
-    <!--                      </div>-->
-    <!--                      <div class="watch-div">-->
-    <!--                         <a href="#" class="btn btn-wtch1">-->
-    <!--                          <i class="fas fa-play"></i> Match Highligt-->
-    <!--                         </a>-->
-    <!--                         <p class="mt-2 text-white"> <i class="fas fa-map-marker-alt"></i> Edens,Melbourne</p>-->
-    <!--                      </div>-->
-    <!--                    </div>-->
-    <!--                  </div>-->
-                      
-    <!--                </div>-->
-                  
-
-                   
-    <!--              </div>-->
-
-                  
-    <!--            </div>-->
-                  
-
-    <!--          </div>-->
-       
-          
-          
-    <!--    </div>-->
-
-    <!--    <div class="right-windre">-->
-    <!--       <img src="{{url('frontend/images/cup01.png')}}" alt="pbn"/>-->
-    <!--    </div>-->
-     
-
-    <!--</div>-->
-
-
-
-    <!-- <div class="shop-apge-div">
-        <div class="container">
-            <div class="mindle-heading text-center">
-              <h5> Our Shop </h5>
-              <h1> Exclusive <span> Collection </span> </h1>
-            </div>
-
-            <span class="bgi-text light-tsext01"> Store</span>
-            <div class="shop-slider owl-carousel owl-theme mt-5">
-                
-                   <div class="comon-section1-shop">
-                       <div class="top-imgb-box">
-                           <figure>
-                              <img src="images/bats.png" alt="shop1"/>
-                           </figure>
-                           <ul class="hover-list2">
-                               <li>
-                                 <a href="#" class="btn btn-comnb">
-                                   <i class="fas fa-shopping-cart"></i>
-                                 </a>
-                               </li>
-                               <li>
-                                <a href="#" class="btn btn-comnb">
-                                  <i class="fas fa-heart"></i>
-                                </a>
-                               </li>
-                              
-                           </ul>
-                       </div>
-                       <div class="text-details-div text-center mt-3">
-                          <a href="products-details.html" class="titel-text1"> Junior Jusrssy </a>
-                          <span class="d-block rat-text"> 
-                            <i class="fas fa-star"></i> 
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-
-                          </span>
-                            <h3 class="price-text1"> <span class="text-decoration-line-through">$ 20.00 </span> $30.00 </h3>
-                          <a href="#" class="btn cart-bthn mt-3">
-                           <span> Add to cart </span> 
-                           <span class="ms-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                            </svg></span>
-                          </a>
-                       </div>
-                   </div>
-
-                   <div class="comon-section1-shop">
-                    <div class="top-imgb-box">
-                        <figure>
-                           <img src="images/toppng.com-ss-elite-cricket-helmet-cricket-helmet-701x523.png" alt="shop1"/>
-                        </figure>
-                        <ul class="hover-list2">
-                            <li>
-                              <a href="#" class="btn btn-comnb">
-                                <i class="fas fa-shopping-cart"></i>
-                              </a>
-                            </li>
-                            <li>
-                             <a href="#" class="btn btn-comnb">
-                               <i class="fas fa-heart"></i>
-                             </a>
-                            </li>
-                           
-                        </ul>
-                    </div>
-                    <div class="text-details-div text-center mt-3">
-                       <a href="products-details.html" class="titel-text1"> Junior Jusrssy </a>
-                       <span class="d-block rat-text"> 
-                         <i class="fas fa-star"></i> 
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-
-                       </span>
-                         <h3 class="price-text1"> <span class="text-decoration-line-through">$ 20.00 </span> $30.00 </h3>
-                         <a href="#" class="btn cart-bthn mt-3">
-                          <span> Add to cart </span> 
-                          <span class="ms-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                             <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                           </svg></span>
-                         </a>
-                    </div>
-                   </div>
-
-                   <div class="comon-section1-shop">
-                    <div class="top-imgb-box">
-                        <figure>
-                           <img src="images/pads.png" alt="shop1"/>
-                        </figure>
-                        <ul class="hover-list2">
-                            <li>
-                              <a href="#" class="btn btn-comnb">
-                                <i class="fas fa-shopping-cart"></i>
-                              </a>
-                            </li>
-                            <li>
-                             <a href="#" class="btn btn-comnb">
-                               <i class="fas fa-heart"></i>
-                             </a>
-                            </li>
-                           
-                        </ul>
-                    </div>
-                    <div class="text-details-div text-center mt-3">
-                       <a href="products-details.html" class="titel-text1"> Junior Jusrssy </a>
-                       <span class="d-block rat-text"> 
-                         <i class="fas fa-star"></i> 
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-
-                       </span>
-                         <h3 class="price-text1"> <span class="text-decoration-line-through">$ 20.00 </span> $30.00 </h3>
-                         <a href="#" class="btn cart-bthn mt-3">
-                          <span> Add to cart </span> 
-                          <span class="ms-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                             <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                           </svg></span>
-                         </a>
-                    </div>
-                   </div>
-
-                   <div class="comon-section1-shop">
-                    <div class="top-imgb-box">
-                        <figure>
-                           <img src="images/wickets.png" alt="shop1"/>
-                        </figure>
-                        <ul class="hover-list2">
-                            <li>
-                              <a href="#" class="btn btn-comnb">
-                                <i class="fas fa-shopping-cart"></i>
-                              </a>
-                            </li>
-                            <li>
-                             <a href="#" class="btn btn-comnb">
-                               <i class="fas fa-heart"></i>
-                             </a>
-                            </li>
-                           
-                        </ul>
-                    </div>
-                    <div class="text-details-div text-center mt-3">
-                       <a href="products-details.html" class="titel-text1"> Junior Jusrssy </a>
-                       <span class="d-block rat-text"> 
-                         <i class="fas fa-star"></i> 
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-
-                       </span>
-                         <h3 class="price-text1"> <span class="text-decoration-line-through">$ 20.00 </span> $30.00 </h3>
-                         <a href="#" class="btn cart-bthn mt-3">
-                          <span> Add to cart </span> 
-                          <span class="ms-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                             <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                           </svg></span>
-                         </a>
-                    </div>
-                   </div>
-
-                   <div class="comon-section1-shop">
-                    <div class="top-imgb-box">
-                        <figure>
-                           <img src="images/botsman1.png" alt="shop1"/>
-                        </figure>
-                        <ul class="hover-list2">
-                            <li>
-                              <a href="#" class="btn btn-comnb">
-                                <i class="fas fa-shopping-cart"></i>
-                              </a>
-                            </li>
-                            <li>
-                             <a href="#" class="btn btn-comnb">
-                               <i class="fas fa-heart"></i>
-                             </a>
-                            </li>
-                           
-                        </ul>
-                    </div>
-                    <div class="text-details-div text-center mt-3">
-                       <a href="products-details.html" class="titel-text1"> Junior Jusrssy </a>
-                       <span class="d-block rat-text"> 
-                         <i class="fas fa-star"></i> 
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-
-                       </span>
-                         <h3 class="price-text1"> <span class="text-decoration-line-through">$ 20.00 </span> $30.00 </h3>
-                         <a href="#" class="btn cart-bthn mt-3">
-                          <span> Add to cart </span> 
-                          <span class="ms-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                             <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                           </svg></span>
-                         </a>
-                    </div>
-                   </div>
-
-                   
-
-                   
-
-
-                   
-           
-            </div>
-        </div>
-    </div> -->
-
-    <!--<div class="our-small-details">-->
-    <!--    <div class="container">-->
-    <!--       <div class="row row-cols-2 row-cols-lg-4 g-4 g-lg-0">-->
-    <!--           <div class="col">-->
-    <!--              <div class="comon-divbn d-md-flex align-items-center">-->
-    <!--                  <figure>-->
-    <!--                     <img src="{{url('frontend/images/819590.png')}}" alt="pnbm"/>-->
-    <!--                  </figure>-->
-    <!--                  <div class="right-dibvb">-->
-    <!--                    <h2>781 +</h2>-->
-    <!--                    <h6>Matches Winery</h6>-->
-    <!--                  </div>-->
-                      
-    <!--              </div>-->
-    <!--           </div>-->
-    <!--           <div class="col d-lg-grid justify-content-lg-center">-->
-    <!--             <div class="comon-divbn d-md-flex align-items-center">-->
-    <!--                <figure>-->
-    <!--                   <img src="{{url('frontend/images/6906863.png')}}" alt="pnbm"/>-->
-    <!--                </figure>-->
-    <!--                <div class="right-dibvb">-->
-    <!--                  <h2>1200 +</h2>-->
-    <!--                  <h6>Team Member</h6>-->
-    <!--                </div>-->
-                    
-    <!--             </div>-->
-    <!--            </div>-->
-
-    <!--            <div class="col d-lg-grid justify-content-lg-end">-->
-    <!--              <div class="comon-divbn d-md-flex align-items-center">-->
-    <!--                 <figure>-->
-    <!--                    <img src="{{url('frontend/images/5140351.png')}}" alt="pnbm"/>-->
-    <!--                 </figure>-->
-    <!--                 <div class="right-dibvb">-->
-    <!--                   <h2>10 +</h2>-->
-    <!--                   <h6>Trained Coaches</h6>-->
-    <!--                 </div>-->
-                     
-    <!--              </div>-->
-    <!--            </div>-->
-
-    <!--            <div class="col d-lg-grid justify-content-lg-end">-->
-    <!--              <div class="comon-divbn d-md-flex align-items-center">-->
-    <!--                 <figure>-->
-    <!--                    <img src="{{url('frontend/images/1851036.png')}}" alt="pnbm"/>-->
-    <!--                 </figure>-->
-    <!--                 <div class="right-dibvb">-->
-    <!--                   <h2>15 +</h2>-->
-    <!--                   <h6>Award</h6>-->
-    <!--                 </div>-->
-                     
-    <!--              </div>-->
-    <!--            </div>-->
-
-
-    <!--       </div>-->
-    <!--    </div>-->
-    <!--    <div class="bg-small-back02">-->
-    <!--       <img src="{{url('frontend/images/parallax-1.png')}}" alt="sportsfbn"/>-->
-    <!--    </div>-->
-
-    <!--</div>-->
-
-    <!--<div class="offers-divo d-inline-block w-100">-->
-    <!--   <div class="container">-->
-    <!--      <div class="mindle-heading text-center">-->
-    <!--        <h5> We offers </h5>-->
-    <!--        <h1> Professional <span> Tennis Academy </span> </h1>-->
-    <!--      </div>-->
-    <!--      <span class="bgi-text light-tsext01"> Services</span>-->
-    <!--      <div class="row row-cols-1 row-cols-md-3 g-4 g-lg-5 mt-0">-->
-    <!--         <div class="col">-->
-    <!--            <a href="#" class="tenis-meg d-inline-block w-100">-->
-    <!--               <figure class="img-oi-div">-->
-    <!--                  <img src="{{url('frontend/images/photo-1559579313-021b6ec9f6d6.jfif')}}" alt="gnm"/>-->
-    <!--               </figure>-->
-    <!--               <h5> Tennis court rent </h5>-->
-    <!--               <p class="mt-2"> -->
-    <!--                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum -->
-    <!--                has been the industry's standard dummy text ever since-->
-                  
-    <!--               </p>-->
-    <!--            </a>-->
-    <!--         </div>-->
-
-    <!--         <div class="col">-->
-    <!--          <a href="#" class="tenis-meg d-inline-block w-100">-->
-    <!--             <figure class="img-oi-div">-->
-    <!--                <img src="{{url('frontend/images/0_RHh1hXVyTxoUIdHC.jpg')}}" alt="gnm"/>-->
-    <!--             </figure>-->
-    <!--             <h5> Personal Trainings </h5>-->
-    <!--             <p class="mt-2"> -->
-    <!--              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum -->
-    <!--              has been the industry's standard dummy text ever since-->
-                
-    <!--             </p>-->
-    <!--          </a>-->
-    <!--         </div>-->
-
-    <!--         <div class="col">-->
-    <!--          <a href="#" class="tenis-meg d-inline-block w-100">-->
-    <!--             <figure class="img-oi-div">-->
-    <!--                <img src="{{url('frontend/images/supor.jpg')}}" alt="gnm"/>-->
-    <!--             </figure>-->
-    <!--             <h5> Support </h5>-->
-    <!--             <p class="mt-2"> -->
-    <!--              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum -->
-    <!--              has been the industry's standard dummy text ever since-->
-                
-    <!--             </p>-->
-    <!--          </a>-->
-    <!--         </div>-->
-
-
-    <!--      </div>-->
-    <!--   </div>-->
-      
-    <!--</div>-->
-
- 
-   <!-- <div class="our-spocerder d-inline-block w-100">-->
-   <!--   <div class="container">-->
-   <!--    <div class="col-lg-7">-->
-   <!--     <h6>  Membership  </h6>-->
-   <!--       <h1>Join Our <span> Club </span> </h1>-->
-   <!--       <span class="bgi-text light-tsext01"> Membership </span>-->
-   <!--      <h5 class="my-3"> Become a member of our online community and get tickets to -->
-   <!--      <span class="d-lg-block"> upcoming matches or sports events faster! </span>  </h5>-->
-   <!--      <div class="comon-section01 mt-5">-->
-   <!--         <ul>-->
-   <!--           <li>-->
-   <!--             <span> <i class="fas fa-check-circle"></i> </span>-->
-   <!--             <span> Vestibulum a eros in enim </span>-->
-   <!--           </li>-->
-   <!--           <li>-->
-   <!--             <span> <i class="fas fa-check-circle"></i> </span>-->
-   <!--             <span> Nam ullamcorper lacus </span>-->
-   <!--           </li>-->
-   <!--           <li>-->
-   <!--             <span> <i class="fas fa-check-circle"></i> </span>-->
-   <!--             <span> Nam ullamcorper lacus </span>-->
-   <!--           </li>-->
-   <!--         </ul>-->
-   <!--      </div>-->
-   <!--      <div class="d-flex align-items-center mt-5">-->
-   <!--         <a href="#" class="btn subc"> Subcribe Now !</a>-->
-   <!--         <a href="#" class="btn joinst ms-4"> Join Member </a>-->
-   <!--      </div>-->
-   <!--     </div>-->
-   <!--     <figure class="m-0 right-imgplya">-->
-   <!--        <img src="{{url('frontend/images/38-384690_cricket-vector-png.png')}}" alt="gnm"/>-->
-   <!--     </figure>-->
-   <!--   </div>-->
-   <!--</div>-->
-
-    <div class="mediasection d-inline-block w-100">
-        <div class="container">
-          <div class="mindle-heading text-center">
-            <h5> Gallery </h5>
-            <h1> Our <span> Latest Media </span> </h1>
+        <div class="col">
+          <div class="about-1imgn">
+            <img src="{{url('frontend/images/pngaaa.com-1165094.png')}}" alt="bnm" />
           </div>
-          <span class="bgi-text light-tsext01"> Gallery </span>
-          <div class="row row-cols-2 row-cols-lg-4 mt-0 g-4 mt-3">
-                   <div class="col">
-                <a data-fancybox="wk" href="{{url('frontend/images/photos/new.jpeg')}}" class="comon-links-divb05">
-                   <figure>
-                      <img src="{{url('frontend/images/photos/new.jpeg')}}" alt="pbnm"/>
-                      <!--<figcaption>-->
-                      <!--  FGC CUP 2022-->
-                      <!--</figcaption>-->
-                   </figure>
-                </a>
-             </div>
-                  <div class="col">
-                <a data-fancybox="wk" href="{{url('frontend/images/photos/new1.jpeg')}}" class="comon-links-divb05">
-                   <figure>
-                      <img src="{{url('frontend/images/photos/new1.jpeg')}}" alt="pbnm"/>
-                      <!--<figcaption>-->
-                      <!--  FGC CUP 2022-->
-                      <!--</figcaption>-->
-                   </figure>
-                </a>
-             </div>
-                  <div class="col">
-                <a data-fancybox="wk" href="{{url('frontend/images/photos/new2.jpeg')}}" class="comon-links-divb05">
-                   <figure>
-                      <img src="{{url('frontend/images/photos/new2.jpeg')}}" alt="pbnm"/>
-                      <!--<figcaption>-->
-                      <!--  FGC CUP 2022-->
-                      <!--</figcaption>-->
-                   </figure>
-                </a>
-             </div>
-                  <div class="col">
-                <a data-fancybox="wk" href="{{url('frontend/images/photos/new3.jpeg')}}" class="comon-links-divb05">
-                   <figure>
-                      <img src="{{url('frontend/images/photos/new3.jpeg')}}" alt="pbnm"/>
-                      <!--<figcaption>-->
-                      <!--  FGC CUP 2022-->
-                      <!--</figcaption>-->
-                   </figure>
-                </a>
-             </div>
-              <div class="col">
-                <a data-fancybox="wk" href="{{url('frontend/images/photos/c2.png')}}" class="comon-links-divb05">
-                   <figure>
-                      <img src="{{url('frontend/images/photos/c2.png')}}" alt="pbnm"/>
-                      <!--<figcaption>-->
-                      <!--  FGC CUP 2022-->
-                      <!--</figcaption>-->
-                   </figure>
-                </a>
-             </div>
-             <div class="col">
-                <a data-fancybox="wk" href="{{url('frontend/images/photos/c4.png')}}" class="comon-links-divb05">
-                   <figure>
-                      <img src="{{url('frontend/images/photos/c4.png')}}" alt="pbnm"/>
-                      <!--<figcaption>-->
-                      <!--  FGC CUP 2022-->
-                      <!--</figcaption>-->
-                   </figure>
-                </a>
-             </div>
-              <div class="col">
-                <a data-fancybox="wk" href="{{url('frontend/images/homemedia/new1.jpg')}}" class="comon-links-divb05">
-                   <figure>
-                      <img src="{{url('frontend/images/homemedia/new1.jpg')}}" alt="pbnm"/>
-                      <!--<figcaption>-->
-                      <!--  FGC CUP 2022-->
-                      <!--</figcaption>-->
-                   </figure>
-                </a>
-             </div>
-             <div class="col">
-                <a data-fancybox="wk" href="{{url('frontend/images/homemedia/new2.jpg')}}" class="comon-links-divb05">
-                   <figure>
-                      <img src="{{url('frontend/images/homemedia/new2.jpg')}}" alt="pbnm"/>
-                      <!--<figcaption>-->
-                      <!--  FGC CUP 2022-->
-                      <!--</figcaption>-->
-                   </figure>
-                </a>
-             </div>
-             <div class="col">
-                <a data-fancybox="wk" href="{{url('frontend/images/homemedia/new3.jpg')}}" class="comon-links-divb05">
-                   <figure>
-                      <img src="{{url('frontend/images/homemedia/new3.jpg')}}" alt="pbnm"/>
-                      <!--<figcaption>-->
-                      <!--  FGC CUP 2022-->
-                      <!--</figcaption>-->
-                   </figure>
-                </a>
-             </div>
-             <div class="col">
-                <a data-fancybox="wk" href="{{url('frontend/images/homemedia/new4.jpg')}}" class="comon-links-divb05">
-                   <figure>
-                      <img src="{{url('frontend/images/homemedia/new4.jpg')}}" alt="pbnm"/>
-                      <!--<figcaption>-->
-                      <!--  FGC CUP 2022-->
-                      <!--</figcaption>-->
-                   </figure>
-                </a>
-             </div>
-             <div class="col">
-                <a data-fancybox="wk" href="{{url('frontend/images/homemedia/new5.jpg')}}" class="comon-links-divb05">
-                   <figure>
-                      <img src="{{url('frontend/images/homemedia/new5.jpg')}}" alt="pbnm"/>
-                      <!--<figcaption>-->
-                      <!--  FGC CUP 2022-->
-                      <!--</figcaption>-->
-                   </figure>
-                </a>
-             </div>
-             <!--<div class="col">-->
-             <!--   <a data-fancybox="wk" href="{{url('frontend/images/homemedia/new6.jpg')}}" class="comon-links-divb05">-->
-             <!--      <figure>-->
-             <!--         <img src="{{url('frontend/images/homemedia/new6.jpg')}}" alt="pbnm"/>-->
-                      <!--<figcaption>-->
-                      <!--  FGC CUP 2022-->
-                      <!--</figcaption>-->
-             <!--      </figure>-->
-             <!--   </a>-->
-             <!--</div>-->
-             <div class="col">
-                <a data-fancybox="wk" href="{{url('frontend/images/homemedia/new7.jpg')}}" class="comon-links-divb05">
-                   <figure>
-                      <img src="{{url('frontend/images/homemedia/new7.jpg')}}" alt="pbnm"/>
-                      <!--<figcaption>-->
-                      <!--  FGC CUP 2022-->
-                      <!--</figcaption>-->
-                   </figure>
-                </a>
-             </div>
-             <div class="col">
-                <a data-fancybox="wk" href="{{url('frontend/images/homemedia/new8.jpg')}}" class="comon-links-divb05">
-                   <figure>
-                      <img src="{{url('frontend/images/homemedia/new8.jpg')}}" alt="pbnm"/>
-                      <!--<figcaption>-->
-                      <!--  FGC CUP 2022-->
-                      <!--</figcaption>-->
-                   </figure>
-                </a>
-             </div>
-             
-             
-             <div class="col">
-                <a data-fancybox="wk" href="{{url('frontend/images/homemedia/1.jpg')}}" class="comon-links-divb05">
-                   <figure>
-                      <img src="{{url('frontend/images/homemedia/1.jpg')}}" alt="pbnm"/>
-                      <!--<figcaption>-->
-                      <!--  FGC CUP 2022-->
-                      <!--</figcaption>-->
-                   </figure>
-                </a>
-             </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="our-small-details">
+    <div class="container">
+      <div class="">
+        <div class="col d-lg-grid justify-content-lg-end">
+          <div class="comon-divbn d-md-flex align-items-center">
+            <figure>
+              <img src="{{url('frontend/images/demo12.png')}}" alt="pnbm" />
+            </figure>
+            <div class="right-dibvb">
+              <h2><?php echo $count + 10032556; ?></h2>
+
+              <h6>Member Views</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-small-back02">
+      <img src="{{url('frontend/images/parallax-1.png')}}" alt="sportsfbn" />
+    </div>
+  </div>
+  <div class="mediasection d-inline-block w-100">
+    <div class="container">
+      <div class="mindle-heading text-center">
+        <h5> Gallery </h5>
+        <h1> Our <span> Latest Media </span> </h1>
+      </div>
+      <span class="bgi-text light-tsext01"> Gallery </span>
+      <div class="row row-cols-2 row-cols-lg-4 mt-0 g-4 mt-3">
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/photos/new.jpeg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/photos/new.jpeg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/photos/new1.jpeg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/photos/new1.jpeg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/photos/new2.jpeg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/photos/new2.jpeg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/photos/new3.jpeg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/photos/new3.jpeg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/photos/c2.png')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/photos/c2.png')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/photos/c4.png')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/photos/c4.png')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/new1.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/new1.jpg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/new2.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/new2.jpg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/new3.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/new3.jpg')}}" alt="pbnm" />
+
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/new4.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/new4.jpg')}}" alt="pbnm" />
+
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/new5.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/new5.jpg')}}" alt="pbnm" />
+
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/new7.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/new7.jpg')}}" alt="pbnm" />
+
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/new8.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/new8.jpg')}}" alt="pbnm" />
+
+            </figure>
+          </a>
+        </div>
 
 
-             <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/2.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/2.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
-            </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/1.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/1.jpg')}}" alt="pbnm" />
+              <!--<figcaption>-->
+              <!--  FGC CUP 2022-->
+              <!--</figcaption>-->
+            </figure>
+          </a>
+        </div>
 
 
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/3.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/3.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
-            </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/2.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/2.jpg')}}" alt="pbnm" />
+              <!--<figcaption>-->
+              <!--  FGC CUP 2022-->
+              <!--</figcaption>-->
+            </figure>
+          </a>
+        </div>
 
 
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/4.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/4.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
-            </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/3.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/3.jpg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
 
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/5.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/5.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
-            </div>
 
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/6.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/6.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
-            </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/4.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/4.jpg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
 
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/7.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/7.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>--> 
-                 </figure>
-              </a>
-            </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/5.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/5.jpg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
 
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/8.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/8.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/6.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/6.jpg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/7.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/7.jpg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/8.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/8.jpg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/9.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/9.jpg')}}" alt="pbnm" />
+
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/10.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/10.jpg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/11.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/11.jpg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/12.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/12.jpg')}}" alt="pbnm" />
+              <!--<figcaption>-->
+              <!--  FGC CUP 2022-->
+              <!--</figcaption>-->
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/17.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/17.jpg')}}" alt="pbnm" />
+              <!--<figcaption>-->
+              <!--  FGC CUP 2022-->
+              <!--</figcaption>-->
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/14.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/14.jpg')}}" alt="pbnm" />
+              <!--<figcaption>-->
+              <!--  FGC CUP 2022-->
+              <!--</figcaption>-->
+            </figure>
+          </a>
+        </div>
+
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/13.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/13.jpg')}}" alt="pbnm" />
+              <!--<figcaption>-->
+              <!--  FGC CUP 2022-->
+              <!--</figcaption>-->
+            </figure>
+          </a>
+        </div>
+
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/15.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/15.jpg')}}" alt="pbnm" />
+              <!--<figcaption>-->
+              <!--  FGC CUP 2022-->
+              <!--</figcaption>-->
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/16.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/16.jpg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/21.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/21.jpg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/18.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/18.jpg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/19.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/19.jpg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/20.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/20.jpg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/22.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/22.jpg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/23.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/23.jpg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+
+        <div class="col">
+          <a data-fancybox="wk" href="{{url('frontend/images/homemedia/24.jpg')}}" class="comon-links-divb05">
+            <figure>
+              <img src="{{url('frontend/images/homemedia/24.jpg')}}" alt="pbnm" />
+            </figure>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="news-sectiondiv d-inline-block w-100">
+    <div class="container">
+      <div class="mindle-heading text-center">
+        <h5> Devoted </h5>
+        <h1> Meet Our <span> Members </span> </h1>
+      </div>
+      <span class="bgi-text light-tsext01"> Member</span>
+
+      <div class="team-membern owl-carousel owl-theme mt-5">
+        @foreach($official_data as $key => $value)
+        <a href="#" class="crm-teams01">
+          <figure>
+            <img src="{{url('uploadsAmend',$value->image)}}" alt="teams01" />
+          </figure>
+          <div class="design">
+            <h5> {{$value->name}}</h5>
+            <p> {{$value->designation}} </p>
+          </div>
+        </a>
+        @endforeach
+      </div>
+    </div>
+    <div class="big-headerpic">
+      <img src="{{url('frontend/images/ballsk.png')}}" alt="ho" />
+    </div>
+  </div>
+  <div class="light-newd-section d-inline-block w-100">
+    <div class="container">
+      <div class="mindle-heading text-center">
+        <h5> What's Trending </h5>
+        <h1> Our <span> Latest Jersey </span> </h1>
+      </div>
+      <span class="bgi-text light-tsext01"> Articles </span>
+      <div class="row  cols-1 row-cols-lg-3 g-4 g-lg-5 mt-0 posrt">
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="img-boxv w-100 d-inline-block">
+            <figure class="w-100 d-inline-block">
+              <img src="https://purvanchalcricketassociation.com/frontend/images/dress/1.jpg" alt="pbnm" />
+            </figure>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="img-boxv w-100 d-inline-block">
+              <figure class="w-100 d-inline-block">
+                <img src="https://purvanchalcricketassociation.com/frontend/images/dress/2.jpg" alt="pbnm" />
+              </figure>
             </div>
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/9.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/9.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="img-boxv w-100 d-inline-block">
+              <figure class="w-100 d-inline-block">
+                <img src="https://purvanchalcricketassociation.com/frontend/images/dress/3.jpg" alt="pbnm" />
+              </figure>
             </div>
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/10.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/10.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+
+            <div class="img-boxv w-100 d-inline-block">
+              <figure class="w-100 d-inline-block">
+                <img src="https://purvanchalcricketassociation.com/frontend/images/dress/4.jpg" alt="pbnm" />
+              </figure>
+
             </div>
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/11.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/11.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
-            </div>
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/12.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/12.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
-            </div>
-             <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/17.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/17.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
-            </div>
-             <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/14.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/14.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
-            </div>
-            
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/13.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/13.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
-            </div>
-           
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/15.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/15.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
-            </div>
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/16.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/16.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
-            </div>
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/21.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/21.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
-            </div>
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/18.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/18.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
-            </div>
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/19.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/19.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
-            </div>
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/20.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/20.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
-            </div>
-           
-            
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/22.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/22.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
-            </div>
-            
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/23.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/23.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
-            </div>
-            
-            <div class="col">
-              <a data-fancybox="wk" href="{{url('frontend/images/homemedia/24.jpg')}}" class="comon-links-divb05">
-                 <figure>
-                    <img src="{{url('frontend/images/homemedia/24.jpg')}}" alt="pbnm"/>
-                    <!--<figcaption>-->
-                    <!--  FGC CUP 2022-->
-                    <!--</figcaption>-->
-                 </figure>
-              </a>
-            </div>
-            
-            
 
 
 
           </div>
-        </div>
-    </div>
+          <div class="col-12 col-md-6 col-lg-4">
 
+            <div class="img-boxv w-100 d-inline-block">
+              <figure class="w-100 d-inline-block">
+                <img src="https://purvanchalcricketassociation.com/frontend/images/dress/5.jpg" alt="pbnm" />
+              </figure>
 
+            </div>
 
-    <div class="news-sectiondiv d-inline-block w-100">
-       <div class="container">
-        <div class="mindle-heading text-center">
-          <h5> Devoted </h5>
-          <h1> Meet Our <span> Members </span> </h1>
-        </div>
-        <span class="bgi-text light-tsext01"> Member</span>
-        
-        <div class="team-membern owl-carousel owl-theme mt-5">
-                @foreach($official_data as $key => $value)
-            <a href="#" class="crm-teams01">
-               <figure>
-                  <img src="{{url('uploadsAmend',$value->image)}}" alt="teams01" />
-               </figure>
-               <div class="design">
-               <h5> {{$value->name}}</h5>
-               <p> {{$value->designation}} </p>
-              </div>
-            </a>
-               @endforeach
-            <!--<a href="player-details.html" class="crm-teams01">-->
-            <!--  <figure>-->
-            <!--     <img src="{{url('frontend/images/t2.jpg')}}" alt="teams01" />-->
-            <!--  </figure>-->
-            <!--  <div class="design">-->
-            <!--  <h5> Adams dane</h5>-->
-            <!--  <p> Offensive Line </p>-->
-            <!-- </div>-->
-            <!--</a>-->
-
-            <!--<a href="player-details.html" class="crm-teams01">-->
-            <!--  <figure>-->
-            <!--     <img src="{{url('frontend/images/t3.jpg')}}" alt="teams01" />-->
-            <!--  </figure>-->
-            <!--  <div class="design">-->
-            <!--  <h5> Clark dane</h5>-->
-            <!--  <p> Offensive Line </p>-->
-            <!-- </div>-->
-            <!--</a>-->
-
-
-            <!--<a href="player-details.html" class="crm-teams01">-->
-            <!--  <figure>-->
-            <!--     <img src="{{url('frontend/images/t4.jpg')}}" alt="teams01" />-->
-            <!--  </figure>-->
-            <!--  <div class="design">-->
-            <!--  <h5> Hills dane </h5>-->
-            <!--  <p> Offensive Line </p>-->
-            <!-- </div>-->
-            <!--</a>-->
-
-            <!--<a href="player-details.html" class="crm-teams01">-->
-            <!--  <figure>-->
-            <!--     <img src="{{url('frontend/images/t5.jpg')}}" alt="teams01" />-->
-            <!--  </figure>-->
-            <!--  <div class="design">-->
-            <!--  <h5> Nalty dane</h5>-->
-            <!--  <p> Offensive Line </p>-->
-            <!-- </div>-->
-            <!--</a>-->
-
-           
-
-            
-
-            
-
-           
-            
-        </div>
-
-       </div>
-       <div class="big-headerpic">
-        <img src="{{url('frontend/images/ballsk.png')}}" alt="ho"/>
-       </div>
-      
-       
-    </div>
-
-    
-    <!--<div class="statisci-players d-inline-block w-100">-->
-    <!--   <div class="container">-->
-    <!--        <div class="mindle-heading text-center">-->
-    <!--          <h5> About Players </h5>-->
-    <!--          <h1> Players  <span> Statistics </span> </h1>-->
-    <!--        </div>-->
-    <!--        <span class="bgi-text light-tsext01"> Players</span>-->
-    <!--        <div class="slider-sertu owl-carousel owl-theme">-->
-    <!--           <div class="items-plays">-->
-    <!--              <div class="row row-cols-1 row-cols-lg-2 align-items-center">-->
-    <!--                 <div class="col">-->
-    <!--                    <figure class="m-0">-->
-    <!--                       <img src="{{url('frontend/images/teamp.png')}}" alt="pmy"/>-->
-    <!--                    </figure>-->
-    <!--                 </div>-->
-    <!--                 <div class="col">-->
-    <!--                    <div class="details-divn">-->
-    <!--                        <h5> Robert Dan </h5>-->
-    <!--                        <hr class="bg-light"/>-->
-    <!--                        <ul>-->
-    <!--                          <li>-->
-    <!--                            <span class="rtus">Role</span>-->
-    <!--                            <span>Batsman</span>-->
-    <!--                          </li>-->
-    <!--                          <li>-->
-    <!--                            <span class="rtus">Bats</span>-->
-    <!--                            <span>Right-Handed</span>-->
-    <!--                          </li>-->
-    <!--                          <li>-->
-    <!--                            <span class="rtus">Bowls</span>-->
-    <!--                            <span>Right-Handed off-break</span>-->
-    <!--                          </li>-->
-    <!--                        </ul>-->
-
-    <!--                        <h5 class="mt-4"> 2022 Season </h5>-->
-    <!--                        <div class="row row-cols-3 mt-3">-->
-    <!--                           <div class="col">-->
-    <!--                               <div class="rtyu">-->
-    <!--                                  <h4> Matches </h4>-->
-    <!--                                  <h2>14</h2>-->
-    <!--                               </div>-->
-    <!--                           </div>-->
-
-    <!--                           <div class="col">-->
-    <!--                            <div class="rtyu">-->
-    <!--                               <h4> Runs </h4>-->
-    <!--                               <h2>1400</h2>-->
-    <!--                            </div>-->
-    <!--                           </div>-->
-
-    <!--                           <div class="col">-->
-    <!--                            <div class="rtyu">-->
-    <!--                               <h4> Wickets </h4>-->
-    <!--                               <h2>5</h2>-->
-    <!--                            </div>-->
-    <!--                           </div>-->
-    <!--                        </div>-->
-
-    <!--                    </div>-->
-    <!--                 </div>-->
-    <!--              </div>-->
-    <!--           </div>-->
-
-
-    <!--           <div class="items-plays">-->
-    <!--            <div class="row row-cols-1 row-cols-lg-2 align-items-center">-->
-    <!--               <div class="col">-->
-    <!--                  <figure class="m-0">-->
-    <!--                     <img src="{{url('frontend/images/teamp2.png')}}" alt="pmy"/>-->
-    <!--                  </figure>-->
-    <!--               </div>-->
-    <!--               <div class="col">-->
-    <!--                  <div class="details-divn">-->
-    <!--                      <h5> Robert Dan </h5>-->
-    <!--                      <hr class="bg-light"/>-->
-    <!--                      <ul>-->
-    <!--                        <li>-->
-    <!--                          <span class="rtus">Role</span>-->
-    <!--                          <span>Batsman</span>-->
-    <!--                        </li>-->
-    <!--                        <li>-->
-    <!--                          <span class="rtus">Bats</span>-->
-    <!--                          <span>Right-Handed</span>-->
-    <!--                        </li>-->
-    <!--                        <li>-->
-    <!--                          <span class="rtus">Bowls</span>-->
-    <!--                          <span>Right-Handed off-break</span>-->
-    <!--                        </li>-->
-    <!--                      </ul>-->
-
-    <!--                      <h5 class="mt-4"> 2022 Season </h5>-->
-    <!--                      <div class="row row-cols-3 mt-3">-->
-    <!--                         <div class="col">-->
-    <!--                             <div class="rtyu">-->
-    <!--                                <h4> Matches </h4>-->
-    <!--                                <h2>14</h2>-->
-    <!--                             </div>-->
-    <!--                         </div>-->
-
-    <!--                         <div class="col">-->
-    <!--                          <div class="rtyu">-->
-    <!--                             <h4> Runs </h4>-->
-    <!--                             <h2>1400</h2>-->
-    <!--                          </div>-->
-    <!--                         </div>-->
-
-    <!--                         <div class="col">-->
-    <!--                          <div class="rtyu">-->
-    <!--                             <h4> Wickets </h4>-->
-    <!--                             <h2>5</h2>-->
-    <!--                          </div>-->
-    <!--                         </div>-->
-    <!--                      </div>-->
-
-    <!--                  </div>-->
-    <!--               </div>-->
-    <!--            </div>-->
-    <!--         </div>-->
-    <!--        </div>-->
-    <!--   </div>-->
-    <!--</div>-->
-
-
-    <div class="light-newd-section d-inline-block w-100">
-       <div class="container">
-          <div class="mindle-heading text-center">
-            <h5> What's Trending </h5>
-            <h1> Our <span> Latest Jersey </span> </h1>
-          </div>
-          <span class="bgi-text light-tsext01"> Articles </span>
-          <div class="row  cols-1 row-cols-lg-3 g-4 g-lg-5 mt-0 posrt">
-         
-             <div class="col-12 col-md-6 col-lg-4">
-               <!--<a href="https://www.jubileepost.in/purvanchal-premier-cricket-league-from-6-december/" target="_blank" class="comon-posrt w-100 d-inline-block">-->
-                  <div class="img-boxv w-100 d-inline-block">
-                    <figure class="w-100 d-inline-block">
-                        <img src="https://purvanchalcricketassociation.com/frontend/images/dress/1.jpg" alt="pbnm"/>
-                    </figure>
-                    <!--<span class="daet01">-->
-                    <!--4-->
-                    <!--  <small class="d-block"> Nov</small>-->
-                    <!--</span>-->
-                  </div>
-<!--                  <div class="parar-delatsy">-->
-<!--                    <h6>Cricket</h6>-->
-<!--                    <h5> पूर्वांचल प्रीमियर क्रिकेट लीग 6 दिसंबर से  </h5>-->
-<!--                    <p class="my-2"> लखनऊ । पूर्वांचल क्रिकेट संघ (पीसीए) के तत्वाधान में आगामी 6 दिसंबर से द्वितीय पूर्वांचल प्रीमियर ट्वेन्टी-20 क्रिकेट लीग प्रतियोगिता का आयोजन 6 दिसंबर से केडी सिंह बाबू स्टेडियम में किया जाएगा ।-->
-<!--</p>-->
-                    
-<!--                  </div>-->
-                 
-              
-
-              <!-- <a href="#" class="comon-posrt right-post0 w-100 d-inline-block mt-4">-->
-              <!--  <div class="img-boxv w-100 d-inline-block">-->
-              <!--    <figure class="w-100 d-inline-block">-->
-              <!--        <img src="{{url('frontend/images/shutterstock_1008651946-scaled.jpg')}}" alt="pbnm"/>-->
-              <!--    </figure>-->
-              <!--    <span class="daet01">-->
-              <!--      14-->
-              <!--      <small class="d-block">Jan</small>-->
-              <!--    </span>-->
-              <!--  </div>-->
-              <!--  <div class="parar-delatsy">-->
-              <!--    <h6>Cricket</h6>-->
-              <!--    <h5> Proin in arcu eu ligula </h5>-->
-              <!--    <div class="user-dela06 w-100 d-inline-block d-flex justify-content-between align-items-center">-->
-              <!--       <div class="admins d-flex align-items-center">-->
-              <!--          <figure class="m-0 me-2">-->
-              <!--             <img src="{{url('frontend/images/cricket-1642491052.jpg')}}" alt="spbn"/>-->
-              <!--          </figure>-->
-              <!--          <span>Jmanes</span>-->
-              <!--       </div>-->
-              <!--       <span class="crom"> <i class="far fa-comments"></i> 2 Comments</span>-->
-              <!--    </div>-->
-              <!--  </div>-->
-               
-              <!--</a>-->
-
-
-             </div>
-                <div class="col-12 col-md-6 col-lg-4">
-               <!--<a href="https://www.jubileepost.in/purvanchal-premier-cricket-league-from-6-december/" target="_blank" class="comon-posrt w-100 d-inline-block">-->
-                  <div class="img-boxv w-100 d-inline-block">
-                    <figure class="w-100 d-inline-block">
-                        <img src="https://purvanchalcricketassociation.com/frontend/images/dress/2.jpg" alt="pbnm"/>
-                    </figure>
-                    <!--<span class="daet01">-->
-                    <!--4-->
-                    <!--  <small class="d-block"> Nov</small>-->
-                    <!--</span>-->
-                  </div>
-<!--                  <div class="parar-delatsy">-->
-<!--                    <h6>Cricket</h6>-->
-<!--                    <h5> पूर्वांचल प्रीमियर क्रिकेट लीग 6 दिसंबर से  </h5>-->
-<!--                    <p class="my-2"> लखनऊ । पूर्वांचल क्रिकेट संघ (पीसीए) के तत्वाधान में आगामी 6 दिसंबर से द्वितीय पूर्वांचल प्रीमियर ट्वेन्टी-20 क्रिकेट लीग प्रतियोगिता का आयोजन 6 दिसंबर से केडी सिंह बाबू स्टेडियम में किया जाएगा ।-->
-<!--</p>-->
-                    
-<!--                  </div>-->
-                 
-              
-
-              <!-- <a href="#" class="comon-posrt right-post0 w-100 d-inline-block mt-4">-->
-              <!--  <div class="img-boxv w-100 d-inline-block">-->
-              <!--    <figure class="w-100 d-inline-block">-->
-              <!--        <img src="{{url('frontend/images/shutterstock_1008651946-scaled.jpg')}}" alt="pbnm"/>-->
-              <!--    </figure>-->
-              <!--    <span class="daet01">-->
-              <!--      14-->
-              <!--      <small class="d-block">Jan</small>-->
-              <!--    </span>-->
-              <!--  </div>-->
-              <!--  <div class="parar-delatsy">-->
-              <!--    <h6>Cricket</h6>-->
-              <!--    <h5> Proin in arcu eu ligula </h5>-->
-              <!--    <div class="user-dela06 w-100 d-inline-block d-flex justify-content-between align-items-center">-->
-              <!--       <div class="admins d-flex align-items-center">-->
-              <!--          <figure class="m-0 me-2">-->
-              <!--             <img src="{{url('frontend/images/cricket-1642491052.jpg')}}" alt="spbn"/>-->
-              <!--          </figure>-->
-              <!--          <span>Jmanes</span>-->
-              <!--       </div>-->
-              <!--       <span class="crom"> <i class="far fa-comments"></i> 2 Comments</span>-->
-              <!--    </div>-->
-              <!--  </div>-->
-               
-              <!--</a>-->
-
-
-             </div>
-                <div class="col-12 col-md-6 col-lg-4">
-               <!--<a href="https://www.jubileepost.in/purvanchal-premier-cricket-league-from-6-december/" target="_blank" class="comon-posrt w-100 d-inline-block">-->
-                  <div class="img-boxv w-100 d-inline-block">
-                    <figure class="w-100 d-inline-block">
-                        <img src="https://purvanchalcricketassociation.com/frontend/images/dress/3.jpg" alt="pbnm"/>
-                    </figure>
-                    <!--<span class="daet01">-->
-                    <!--4-->
-                    <!--  <small class="d-block"> Nov</small>-->
-                    <!--</span>-->
-                  </div>
-<!--                  <div class="parar-delatsy">-->
-<!--                    <h6>Cricket</h6>-->
-<!--                    <h5> पूर्वांचल प्रीमियर क्रिकेट लीग 6 दिसंबर से  </h5>-->
-<!--                    <p class="my-2"> लखनऊ । पूर्वांचल क्रिकेट संघ (पीसीए) के तत्वाधान में आगामी 6 दिसंबर से द्वितीय पूर्वांचल प्रीमियर ट्वेन्टी-20 क्रिकेट लीग प्रतियोगिता का आयोजन 6 दिसंबर से केडी सिंह बाबू स्टेडियम में किया जाएगा ।-->
-<!--</p>-->
-                    
-<!--                  </div>-->
-                 
-              
-
-              <!-- <a href="#" class="comon-posrt right-post0 w-100 d-inline-block mt-4">-->
-              <!--  <div class="img-boxv w-100 d-inline-block">-->
-              <!--    <figure class="w-100 d-inline-block">-->
-              <!--        <img src="{{url('frontend/images/shutterstock_1008651946-scaled.jpg')}}" alt="pbnm"/>-->
-              <!--    </figure>-->
-              <!--    <span class="daet01">-->
-              <!--      14-->
-              <!--      <small class="d-block">Jan</small>-->
-              <!--    </span>-->
-              <!--  </div>-->
-              <!--  <div class="parar-delatsy">-->
-              <!--    <h6>Cricket</h6>-->
-              <!--    <h5> Proin in arcu eu ligula </h5>-->
-              <!--    <div class="user-dela06 w-100 d-inline-block d-flex justify-content-between align-items-center">-->
-              <!--       <div class="admins d-flex align-items-center">-->
-              <!--          <figure class="m-0 me-2">-->
-              <!--             <img src="{{url('frontend/images/cricket-1642491052.jpg')}}" alt="spbn"/>-->
-              <!--          </figure>-->
-              <!--          <span>Jmanes</span>-->
-              <!--       </div>-->
-              <!--       <span class="crom"> <i class="far fa-comments"></i> 2 Comments</span>-->
-              <!--    </div>-->
-              <!--  </div>-->
-               
-              <!--</a>-->
-
-
-             </div>
-                             <div class="col-12 col-md-6 col-lg-4">
-
-                  <div class="img-boxv w-100 d-inline-block">
-                    <figure class="w-100 d-inline-block">
-                        <img src="https://purvanchalcricketassociation.com/frontend/images/dress/4.jpg" alt="pbnm"/>
-                    </figure>
-         
-                  </div>
-
-
-
-             </div>
-             <div class="col-12 col-md-6 col-lg-4">
-
-                  <div class="img-boxv w-100 d-inline-block">
-                    <figure class="w-100 d-inline-block">
-                        <img src="https://purvanchalcricketassociation.com/frontend/images/dress/5.jpg" alt="pbnm"/>
-                    </figure>
-         
-                  </div>
-
-
-
-             </div>
-             <div class="col-12 col-md-6 col-lg-4">
-
-                  <div class="img-boxv w-100 d-inline-block">
-                    <figure class="w-100 d-inline-block">
-                        <img src="https://purvanchalcricketassociation.com/frontend/images/dress/6.jpg" alt="pbnm"/>
-                    </figure>
-         
-                  </div>
-
-
-
-             </div>
-             <div class="col-12 col-md-6 col-lg-4">
-
-                  <div class="img-boxv w-100 d-inline-block">
-                    <figure class="w-100 d-inline-block">
-                        <img src="https://purvanchalcricketassociation.com/frontend/images/dress/7.jpg" alt="pbnm"/>
-                    </figure>
-         
-                  </div>
-
-
-
-             </div>
-            <!-- <div class="col">-->
-            <!--  <a href="#" class="comon-posrt middle-post w-100 d-inline-block">-->
-            <!--     <div class="img-boxv w-100 d-inline-block">-->
-            <!--       <figure class="w-100 d-inline-block">-->
-            <!--           <img src="{{url('frontend/images/pexels-photo-13079892.webp')}}" alt="pbnm"/>-->
-            <!--       </figure>-->
-                  
-            <!--     </div>-->
-            <!--     <div class="parar-delatsy">-->
-            <!--       <h6>Cricket</h6>-->
-            <!--       <h5> Proin in arcu eu ligula vestibulum molestie in vel mi </h5>-->
-            <!--       <i class="fas fa-quote-right"></i>-->
-            <!--       <p class="my-2"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.-->
-            <!--          Lorem Ipsum has been</p>-->
-            <!--       <div class="user-dela06 w-100 d-inline-block d-flex justify-content-between align-items-center">-->
-            <!--          <div class="admins d-flex align-items-center">-->
-            <!--             <figure class="m-0 me-2">-->
-            <!--                <img src="{{url('frontend/images/manages-st.jpg')}}" alt="spbn"/>-->
-            <!--             </figure>-->
-            <!--             <span>Jmanes</span>-->
-            <!--          </div>-->
-            <!--          <span class="crom"> <i class="far fa-comments"></i> 2 Comments</span>-->
-            <!--       </div>-->
-            <!--     </div>-->
-                
-            <!--  </a>-->
-
-            <!--  <a href="https://www.jubileepost.in/dsc-champion-in-winter-challenge-cup-cricket/" target="_blank" class="comon-posrt w-100 d-inline-block my-4">-->
-            <!--    <div class="img-boxv w-100 d-inline-block">-->
-            <!--      <figure class="w-100 d-inline-block">-->
-            <!--          <img src="https://www.jubileepost.in/wp-content/uploads/2021/01/1-18-e1610798298434.jpg" alt="pbnm"/>-->
-            <!--      </figure>-->
-            <!--      <span class="daet01">-->
-            <!--        16-->
-            <!--        <small class="d-block">Jan</small>-->
-            <!--      </span>-->
-            <!--    </div>-->
-            <!--    <div class="parar-delatsy">-->
-            <!--      <h6>Cricket</h6>-->
-            <!--      <h5> विंटर चैलेंज कप क्रिकेट में डीएससी चैम्पियन </h5>-->
-            <!--      <p class="my-2"> लखनऊ । मैन ऑफ द मैच सैफअहसन की शानदार गेंदबाजी 11 रन पर 4 विकेट की मदद से डीएससी इलेवन ने लाइफ केयर विंटर कैप चैलेंज क्रिकेट प्रतियोगिता के फाइनल में एमडीबीजी को 34 रनों से पराजित कर चैंपियन बनने का श्रेय हासिल किया ।</p>-->
-                  
-            <!--    </div>-->
-               
-            <!--  </a>-->
-
-            <!--  <a href="#" class="comon-posrt middle-post m-hefigh w-100 d-inline-block ">-->
-            <!--    <div class="img-boxv w-100 d-inline-block">-->
-            <!--      <figure class="w-100 d-inline-block">-->
-            <!--          <img src="{{url('frontend/images/zhabi04opycbbyjlmvmg.webp')}}" alt="pbnm"/>-->
-            <!--      </figure>-->
-                 
-            <!--    </div>-->
-            <!--    <div class="parar-delatsy">-->
-            <!--      <h6>Cricket</h6>-->
-            <!--      <h5> Proin in arcu eu ligula vestibulum molestie in vel mi </h5>-->
-            <!--      <i class="fas fa-quote-right"></i>-->
-            <!--      <div class="user-dela06 w-100 d-inline-block d-flex justify-content-between align-items-center">-->
-            <!--         <div class="admins d-flex align-items-center">-->
-            <!--            <figure class="m-0 me-2">-->
-            <!--               <img src="{{url('frontend/images/manages-st.jpg')}}" alt="spbn"/>-->
-            <!--            </figure>-->
-            <!--            <span>Jmanes</span>-->
-            <!--         </div>-->
-            <!--         <span class="crom"> <i class="far fa-comments"></i> 2 Comments</span>-->
-            <!--      </div>-->
-            <!--    </div>-->
-               
-            <!--  </a>-->
-
-            <!--</div>-->
-
-
-            <!--<div class="col">-->
-            <!--  <a href="#" class="comon-posrt right-post0 w-100 d-inline-block">-->
-            <!--     <div class="img-boxv w-100 d-inline-block">-->
-            <!--       <figure class="w-100 d-inline-block">-->
-            <!--           <img src="{{url('frontend/images/np_file_171051.jpg')}}" alt="pbnm"/>-->
-            <!--       </figure>-->
-            <!--       <span class="daet01">-->
-            <!--         14-->
-            <!--         <small class="d-block">Jan</small>-->
-            <!--       </span>-->
-            <!--     </div>-->
-            <!--     <div class="parar-delatsy">-->
-            <!--       <h6>Cricket</h6>-->
-            <!--       <h5> Proin in arcu eu ligula </h5>-->
-            <!--       <div class="user-dela06 w-100 d-flex justify-content-between align-items-center">-->
-            <!--          <div class="admins d-flex align-items-center ">-->
-            <!--             <figure class="m-0 me-2">-->
-            <!--                <img src="{{url('frontend/images/manages-st.jpg')}}" alt="spbn"/>-->
-            <!--             </figure>-->
-            <!--             <span>Jmanes</span>-->
-            <!--          </div>-->
-            <!--          <span class="crom"> <i class="far fa-comments"></i> 2 Comments</span>-->
-            <!--       </div>-->
-            <!--     </div>-->
-                
-            <!--  </a>-->
-
-            <!--  <a href="#" class="comon-posrt w-100 d-inline-block mt-4">-->
-            <!--    <div class="img-boxv w-100 d-inline-block">-->
-            <!--      <figure class="w-100 d-inline-block">-->
-            <!--          <img src="{{url('frontend/images/skysports-ireland-women-cricket_5369912.jpg')}}" alt="pbnm"/>-->
-            <!--      </figure>-->
-            <!--      <span class="daet01">-->
-            <!--        14-->
-            <!--        <small class="d-block">Jan</small>-->
-            <!--      </span>-->
-            <!--    </div>-->
-            <!--    <div class="parar-delatsy">-->
-            <!--      <h6>Cricket</h6>-->
-            <!--      <h5> Proin in arcu eu ligula </h5>-->
-            <!--      <p class="my-2"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.-->
-            <!--         Lorem Ipsum has been</p>-->
-            <!--      <div class="user-dela06 w-100 d-inline-block d-flex justify-content-between align-items-center">-->
-            <!--         <div class="admins d-flex align-items-center">-->
-            <!--            <figure class="m-0 me-2">-->
-            <!--               <img src="{{url('frontend/images/manages-st.jpg')}}" alt="spbn"/>-->
-            <!--            </figure>-->
-            <!--            <span>Jmanes</span>-->
-            <!--         </div>-->
-            <!--         <span class="crom"> <i class="far fa-comments"></i> 2 Comments</span>-->
-            <!--      </div>-->
-            <!--    </div>-->
-               
-            <!--  </a>-->
-            <!--</div>-->
 
 
           </div>
+          <div class="col-12 col-md-6 col-lg-4">
 
-          <!--<a href="articles" class="btn btn-about mx-auto justify-content-center mt-5">-->
-          <!--  <span>-->
-          <!--    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">-->
-          <!--      <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"></path>-->
-          <!--    </svg>-->
-          <!--  </span>-->
-          <!--  See All Post</a>-->
-       </div>
+            <div class="img-boxv w-100 d-inline-block">
+              <figure class="w-100 d-inline-block">
+                <img src="https://purvanchalcricketassociation.com/frontend/images/dress/6.jpg" alt="pbnm" />
+              </figure>
 
-       
-       
+            </div>
+
+
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+
+            <div class="img-boxv w-100 d-inline-block">
+              <figure class="w-100 d-inline-block">
+                <img src="https://purvanchalcricketassociation.com/frontend/images/dress/7.jpg" alt="pbnm" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-<section class="float-start w-100 body-part py-5 ">
-
-   <div class="container">
-      <div class="row">
-         <div class="col-12">
+    <section class="float-start w-100 body-part py-5 ">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
             <!-- =======1st section start========= -->
             <div class="mediasection d-inline-block w-100  mb-5 pb-5 rounded">
-               <div class="container">
+              <div class="container">
 
-                  <div class="mindle-heading text-center">
+                <div class="mindle-heading text-center">
 
-                     <!-- <h5> News cutting </h5> -->
-                     <h1> LATEST <span> News</span> </h1>
+                  <!-- <h5> News cutting </h5> -->
+                  <h1> LATEST <span> News</span> </h1>
+                </div>
+                <span class="bgi-text light-tsext01"> News cutting</span>
+                <div class="row row-cols-2 row-cols-lg-4 mt-0 g-4 mt-5">
+
+                  <div class="col shadowc">
+                    <a data-fancybox="wk" href="{{url('frontend/images/homenews/1.jpg')}}" class="comon-links-divb05">
+                      <figure>
+                        <img src="{{url('frontend/images/homenews/1.jpg')}}" alt="pbnm" />
+
+                      </figure>
+                    </a>
                   </div>
-                  <span class="bgi-text light-tsext01"> News cutting</span>
+                  <div class="col shadowc">
+                    <a data-fancybox="wk" href="{{url('frontend/images/homenews/2.jpg')}}" class="comon-links-divb05">
+                      <figure>
+                        <img src="{{url('frontend/images/homenews/2.jpg')}}" alt="pbnm" />
 
-                 
-                  <div class="row row-cols-2 row-cols-lg-4 mt-0 g-4 mt-5">
-                    
-                     <div class="col shadowc">
-                        <a data-fancybox="wk" href="{{url('frontend/images/homenews/1.jpg')}}" class="comon-links-divb05">
-                           <figure>
-                              <img src="{{url('frontend/images/homenews/1.jpg')}}" alt="pbnm" />
-
-                           </figure>
-                        </a>
-                     </div>
-                     <div class="col shadowc">
-                        <a data-fancybox="wk" href="{{url('frontend/images/homenews/2.jpg')}}" class="comon-links-divb05">
-                           <figure>
-                              <img src="{{url('frontend/images/homenews/2.jpg')}}" alt="pbnm" />
-
-                           </figure>
-                        </a>
-                     </div>
-                     <div class="col shadowc">
-                        <a data-fancybox="wk" href="{{url('frontend/images/homenews/3.jpg')}}" class="comon-links-divb05">
-                           <figure>
-                              <img src="{{url('frontend/images/homenews/3.jpg')}}" alt="pbnm" />
-
-                           </figure>
-                        </a>
-                     </div>
-                     <div class="col shadowc">
-                        <a data-fancybox="wk" href="{{url('frontend/images/homenews/4.jpg')}}" class="comon-links-divb05">
-                           <figure>
-                              <img src="{{url('frontend/images/homenews/4.jpg')}}" alt="pbnm" />
-
-                           </figure>
-                        </a>
-                     </div>
-                     <div class="col shadowc">
-                        <a data-fancybox="wk" href="{{url('frontend/images/homenews/5.jpg')}}" class="comon-links-divb05">
-                           <figure>
-                              <img src="{{url('frontend/images/homenews/5.jpg')}}" alt="pbnm" />
-
-                           </figure>
-                        </a>
-                     </div>
-                        <div class="col shadowc">
-                        <a data-fancybox="wk" href="{{url('frontend/images/homenews/6.jpg')}}" class="comon-links-divb05">
-                           <figure>
-                              <img src="{{url('frontend/images/homenews/6.jpg')}}" alt="pbnm" />
-
-                           </figure>
-                        </a>
-                     </div>
-                        <div class="col shadowc">
-                        <a data-fancybox="wk" href="{{url('frontend/images/homenews/7.jpg')}}" class="comon-links-divb05">
-                           <figure>
-                              <img src="{{url('frontend/images/homenews/7.jpg')}}" alt="pbnm" />
-
-                           </figure>
-                        </a>
-                     </div>
-                        <div class="col shadowc">
-                        <a data-fancybox="wk" href="{{url('frontend/images/homenews/8.jpg')}}" class="comon-links-divb05">
-                           <figure>
-                              <img src="{{url('frontend/images/homenews/8.jpg')}}" alt="pbnm" />
-
-                           </figure>
-                        </a>
-                     </div>
-                         <div class="col shadowc">
-                        <a data-fancybox="wk" href="{{url('frontend/images/homenews/9.jpg')}}" class="comon-links-divb05">
-                           <figure>
-                              <img src="{{url('frontend/images/homenews/9.jpg')}}" alt="pbnm" />
-
-                           </figure>
-                        </a>
-                     </div>
-                         <div class="col shadowc">
-                        <a data-fancybox="wk" href="{{url('frontend/images/homenews/10.jpg')}}" class="comon-links-divb05">
-                           <figure>
-                              <img src="{{url('frontend/images/homenews/10.jpg')}}" alt="pbnm" />
-
-                           </figure>
-                        </a>
-                     </div>
-                         <div class="col shadowc">
-                        <a data-fancybox="wk" href="{{url('frontend/images/homenews/11.jpg')}}" class="comon-links-divb05">
-                           <figure>
-                              <img src="{{url('frontend/images/homenews/11.jpg')}}" alt="pbnm" />
-
-                           </figure>
-                        </a>
-                     </div>
-                         <div class="col shadowc">
-                        <a data-fancybox="wk" href="{{url('frontend/images/homenews/12.jpg')}}" class="comon-links-divb05">
-                           <figure>
-                              <img src="{{url('frontend/images/homenews/12.jpg')}}" alt="pbnm" />
-
-                           </figure>
-                        </a>
-                     </div>
-                         <div class="col shadowc">
-                        <a data-fancybox="wk" href="{{url('frontend/images/homenews/13.jpg')}}" class="comon-links-divb05">
-                           <figure>
-                              <img src="{{url('frontend/images/homenews/13.jpg')}}" alt="pbnm" />
-
-                           </figure>
-                        </a>
-                     </div>
-                         <div class="col shadowc">
-                        <a data-fancybox="wk" href="{{url('frontend/images/homenews/14.jpg')}}" class="comon-links-divb05">
-                           <figure>
-                              <img src="{{url('frontend/images/homenews/14.jpg')}}" alt="pbnm" />
-
-                           </figure>
-                        </a>
-                     </div>
-                         <div class="col shadowc">
-                        <a data-fancybox="wk" href="{{url('frontend/images/homenews/15.jpg')}}" class="comon-links-divb05">
-                           <figure>
-                              <img src="{{url('frontend/images/homenews/15.jpg')}}" alt="pbnm" />
-
-                           </figure>
-                        </a>
-                     </div>
-                         <div class="col shadowc">
-                        <a data-fancybox="wk" href="{{url('frontend/images/homenews/16.jpg')}}" class="comon-links-divb05">
-                           <figure>
-                              <img src="{{url('frontend/images/homenews/16.jpg')}}" alt="pbnm" />
-
-                           </figure>
-                        </a>
-                     </div>
-                         <div class="col shadowc">
-                        <a data-fancybox="wk" href="{{url('frontend/images/homenews/17.jpg')}}" class="comon-links-divb05">
-                           <figure>
-                              <img src="{{url('frontend/images/homenews/17.jpg')}}" alt="pbnm" />
-
-                           </figure>
-                        </a>
-                     </div>
-                         <div class="col shadowc">
-                        <a data-fancybox="wk" href="{{url('frontend/images/homenews/18.jpg')}}" class="comon-links-divb05">
-                           <figure>
-                              <img src="{{url('frontend/images/homenews/18.jpg')}}" alt="pbnm" />
-
-                           </figure>
-                        </a>
-                     </div>
-                    
+                      </figure>
+                    </a>
                   </div>
+                  <div class="col shadowc">
+                    <a data-fancybox="wk" href="{{url('frontend/images/homenews/3.jpg')}}" class="comon-links-divb05">
+                      <figure>
+                        <img src="{{url('frontend/images/homenews/3.jpg')}}" alt="pbnm" />
 
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="col shadowc">
+                    <a data-fancybox="wk" href="{{url('frontend/images/homenews/4.jpg')}}" class="comon-links-divb05">
+                      <figure>
+                        <img src="{{url('frontend/images/homenews/4.jpg')}}" alt="pbnm" />
 
-               </div>
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="col shadowc">
+                    <a data-fancybox="wk" href="{{url('frontend/images/homenews/5.jpg')}}" class="comon-links-divb05">
+                      <figure>
+                        <img src="{{url('frontend/images/homenews/5.jpg')}}" alt="pbnm" />
+
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="col shadowc">
+                    <a data-fancybox="wk" href="{{url('frontend/images/homenews/6.jpg')}}" class="comon-links-divb05">
+                      <figure>
+                        <img src="{{url('frontend/images/homenews/6.jpg')}}" alt="pbnm" />
+
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="col shadowc">
+                    <a data-fancybox="wk" href="{{url('frontend/images/homenews/7.jpg')}}" class="comon-links-divb05">
+                      <figure>
+                        <img src="{{url('frontend/images/homenews/7.jpg')}}" alt="pbnm" />
+
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="col shadowc">
+                    <a data-fancybox="wk" href="{{url('frontend/images/homenews/8.jpg')}}" class="comon-links-divb05">
+                      <figure>
+                        <img src="{{url('frontend/images/homenews/8.jpg')}}" alt="pbnm" />
+
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="col shadowc">
+                    <a data-fancybox="wk" href="{{url('frontend/images/homenews/9.jpg')}}" class="comon-links-divb05">
+                      <figure>
+                        <img src="{{url('frontend/images/homenews/9.jpg')}}" alt="pbnm" />
+
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="col shadowc">
+                    <a data-fancybox="wk" href="{{url('frontend/images/homenews/10.jpg')}}" class="comon-links-divb05">
+                      <figure>
+                        <img src="{{url('frontend/images/homenews/10.jpg')}}" alt="pbnm" />
+
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="col shadowc">
+                    <a data-fancybox="wk" href="{{url('frontend/images/homenews/11.jpg')}}" class="comon-links-divb05">
+                      <figure>
+                        <img src="{{url('frontend/images/homenews/11.jpg')}}" alt="pbnm" />
+
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="col shadowc">
+                    <a data-fancybox="wk" href="{{url('frontend/images/homenews/12.jpg')}}" class="comon-links-divb05">
+                      <figure>
+                        <img src="{{url('frontend/images/homenews/12.jpg')}}" alt="pbnm" />
+
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="col shadowc">
+                    <a data-fancybox="wk" href="{{url('frontend/images/homenews/13.jpg')}}" class="comon-links-divb05">
+                      <figure>
+                        <img src="{{url('frontend/images/homenews/13.jpg')}}" alt="pbnm" />
+
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="col shadowc">
+                    <a data-fancybox="wk" href="{{url('frontend/images/homenews/14.jpg')}}" class="comon-links-divb05">
+                      <figure>
+                        <img src="{{url('frontend/images/homenews/14.jpg')}}" alt="pbnm" />
+
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="col shadowc">
+                    <a data-fancybox="wk" href="{{url('frontend/images/homenews/15.jpg')}}" class="comon-links-divb05">
+                      <figure>
+                        <img src="{{url('frontend/images/homenews/15.jpg')}}" alt="pbnm" />
+
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="col shadowc">
+                    <a data-fancybox="wk" href="{{url('frontend/images/homenews/16.jpg')}}" class="comon-links-divb05">
+                      <figure>
+                        <img src="{{url('frontend/images/homenews/16.jpg')}}" alt="pbnm" />
+
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="col shadowc">
+                    <a data-fancybox="wk" href="{{url('frontend/images/homenews/17.jpg')}}" class="comon-links-divb05">
+                      <figure>
+                        <img src="{{url('frontend/images/homenews/17.jpg')}}" alt="pbnm" />
+
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="col shadowc">
+                    <a data-fancybox="wk" href="{{url('frontend/images/homenews/18.jpg')}}" class="comon-links-divb05">
+                      <figure>
+                        <img src="{{url('frontend/images/homenews/18.jpg')}}" alt="pbnm" />
+
+                      </figure>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- =======1st section end========= -->
+
+        </div>
+      </div>
+    </section>
+    <div class="sponcer-logo d-inline-block w-100">
+      <div class="rtck-img">
+        <img src="{{url('assets/images/favpng_cricket-bats-kookaburra-sport-bag-cricket-clothing-and-equipment.png')}}" alt="bnm" />
+      </div>
+      <div class="container">
+        <div class="mindle-heading text-center">
+          <h1> Our <span> Units </span> </h1>
+        </div>
+        <span class="bgi-text light-tsext01"> Districts </span>
+        <div class="sponj-slide owl-carousel owl-theme mt-5">
+          @foreach($unit_data as $key =>$value)
+          <div class="corm-iteml">
+
+            <div class="shadowd px-4 py-3">
+              <div class="district-name">
+                <p>{{$value->district}}</p>
+              </div>
+              <h4>{{$value->name}}</h4>
+              <p><b>Secretary : </b> <span class="ps-2">{{$value->secretary}}</span></p>
+              <p><b>Mobile No : </b> <span class="ps-2">{{$value->mobileno}}</span></p>
+              <hr>
+              <p><b>President : </b> <span class="ps-2">{{$value->president}}</span></p>
+              <p><b>Mobile No : </b> <span class="ps-2">{{$value->president_mobile}}</span></p>
             </div>
 
+          </div>
+          @endforeach
 
-         </div>
-         <!-- =======1st section end========= -->
-
-
+        </div>
 
       </div>
-   </div>
-</section>
-    <div class="sponcer-logo d-inline-block w-100">
-        <div class="rtck-img">
-            <img src="{{url('assets/images/favpng_cricket-bats-kookaburra-sport-bag-cricket-clothing-and-equipment.png')}}" alt="bnm" />
-        </div>
-        <div class="container">
-            <div class="mindle-heading text-center">
-                <h1> Our <span> Units </span> </h1>
-            </div>
-            <span class="bgi-text light-tsext01"> Districts </span>
-            <div class="sponj-slide owl-carousel owl-theme mt-5">
-                   @foreach($unit_data as $key =>$value)
-                <div class="corm-iteml">
-                
-                <div class="shadowd px-4 py-3">
-            <div class="district-name">
-              <p>{{$value->district}}</p>
-            </div>
-            <h4>{{$value->name}}</h4>
-            <p><b>Secretary : </b> <span class="ps-2">{{$value->secretary}}</span></p>
-            <p><b>Mobile No : </b> <span class="ps-2">{{$value->mobileno}}</span></p>
-            <hr>
-            <p><b>President : </b> <span class="ps-2">{{$value->president}}</span></p>
-            <p><b>Mobile No : </b> <span class="ps-2">{{$value->president_mobile}}</span></p>
-        </div>
-     
-                </div> 
-                       @endforeach
-<!--                <div class="corm-iteml">-->
-               
-<!--                <div class="shadowd px-4 py-3">-->
-<!--          <div class="district-name">-->
-<!--            <p>Bhadohi</p>-->
-<!--          </div>-->
-<!--          <h4>Cricket association of sant Ravidas Nagar bhadohi</h4>-->
-<!--          <p><b>Secretary : </b> <span class="ps-2">Binju Yadav</span></p>-->
-<!--          <hr>-->
-<!--          <p><b>President : </b> <span class="ps-2">Jay Prakash Yadav</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">9648694922</span></p>-->
-<!--        </div>-->
-<!--      </div>-->
-
-<!--      <div class="corm-iteml">-->
-
-<!--      <div class="shadowd px-4 py-3">-->
-<!--          <div class="district-name">-->
-<!--            <p>Meerzapur</p>-->
-<!--          </div>-->
-<!--          <h4>Cricket association of meerzapur</h4>-->
-<!--          <p><b>Secretary : </b> <span class="ps-2">Dilip Gupta</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">6386648478</span></p>-->
-<!--          <hr>-->
-<!--          <p><b>President : </b> <span class="ps-2">Sanjay Gupta</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">9936028124</span></p>-->
-<!--        </div>-->
-
-
-<!--</div>-->
-<!--<div class="corm-iteml">-->
-<!--<div class="shadowd px-4 py-3">-->
-<!--          <div class="district-name">-->
-<!--            <p>Ballia</p>-->
-<!--          </div>-->
-<!--          <h4>Ballia cricket association</h4>-->
-<!--          <p><b>Secretary : </b> <span class="ps-2">Govind Kashyap</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">7678530952</span></p>-->
-<!--          <hr>-->
-<!--          <p><b>President : </b> <span class="ps-2">Satish Sharma</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">9711908508</span></p>-->
-<!--        </div>-->
-
-
-
-<!--</div>-->
-<!--<div class="corm-iteml">-->
-
-<!--<div class="shadowd px-4 py-3">-->
-<!--          <div class="district-name">-->
-<!--            <p>Pratapgarh</p>-->
-<!--          </div>-->
-<!--          <h4>Cricket association of pratapgarh</h4>-->
-<!--          <p><b>Secretary : </b> <span class="ps-2">Sahablaal Yadav</span></p>-->
-          
-<!--          <hr>-->
-<!--          <p><b>President : </b> <span class="ps-2">Rajendra Prasad Yadav</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">9839189638</span></p>-->
-<!--        </div>-->
-
-
-<!--</div>-->
-<!--<div class="corm-iteml">-->
-
-<!--<div class="shadowd px-4 py-3">-->
-<!--          <div class="district-name">-->
-<!--            <p>Kannauj</p>-->
-<!--          </div>-->
-<!--          <h4>Kannauj cricket association</h4>-->
-<!--          <p><b>Secretary : </b> <span class="ps-2">Gaurav Shukla</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">9873799580</span></p>-->
-<!--          <hr>-->
-<!--          <p><b>President : </b> <span class="ps-2">Akash Kumar</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">9650317302</span></p>-->
-<!--        </div>-->
-
-
-<!--</div>-->
-<!--<div class="corm-iteml">-->
-
-<!--<div class="shadowd px-4 py-3">-->
-<!--          <div class="district-name">-->
-<!--            <p>Jaunpur</p>-->
-<!--          </div>-->
-<!--          <h4>Jaunpur cricket association</h4>-->
-<!--          <p><b>Secretary : </b> <span class="ps-2">Vinod Yadav</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">8960966681</span></p>-->
-<!--          <hr>-->
-<!--          <p><b>President : </b> <span class="ps-2">Ramnarayan Yadav</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">8948234601</span></p>-->
-<!--        </div>-->
-
-
-<!--</div>-->
-<!--<div class="corm-iteml">-->
-
-<!--<div class="shadowd px-4 py-3">-->
-<!--          <div class="district-name">-->
-<!--            <p>Lalitpur</p>-->
-<!--          </div>-->
-<!--          <h4>Lalitpur cricket association.</h4>-->
-<!--          <p><b>Secretary : </b> <span class="ps-2">Anmol Jain</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">7007332745</span></p>-->
-<!--          <hr>-->
-<!--          <p><b>President : </b> <span class="ps-2">Satrughan Yadav</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">9795128693</span></p>-->
-<!--        </div>-->
-
-
-<!--</div>-->
-<!--<div class="corm-iteml">-->
-<!--<div class="shadowd px-4 py-3">-->
-<!--          <div class="district-name">-->
-<!--            <p>Hathras</p>-->
-<!--          </div>-->
-<!--          <h4>HATHRAS CRICKET ASSOCIATION</h4>-->
-<!--          <p><b>Secretary : </b> <span class="ps-2"> Dinesh Kumar</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">9045461400</span></p>-->
-<!--          <hr>-->
-<!--          <p><b>President : </b> <span class="ps-2">Sujit Pachauri</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">9837053433</span></p>-->
-<!--        </div>-->
-
-
-
-<!--</div>-->
-<!--<div class="corm-iteml">-->
-
-
-<!--<div class="shadowd px-4 py-3">-->
-<!--          <div class="district-name">-->
-<!--            <p>Etah</p>-->
-<!--          </div>-->
-<!--          <h4>District Cricket Assosiation (Etah)</h4>-->
-<!--          <p><b>Secretary : </b> <span class="ps-2"> Akhil Dixit</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">7417657265</span></p>-->
-<!--          <hr>-->
-<!--          <p><b>President : </b> <span class="ps-2">Swagat Pachauri</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">9897541157</span></p>-->
-<!--        </div>-->
-
-<!--</div>-->
-<!--<div class="corm-iteml">-->
-<!--<div class="shadowd px-4 py-3">-->
-<!--          <div class="district-name">-->
-<!--            <p>Kasganj</p>-->
-<!--          </div>-->
-<!--          <h4>Kasganj Cricket Association</h4>-->
-<!--          <p><b>Secretary : </b> <span class="ps-2"> Chetan Kumar</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">9758429011</span></p>-->
-<!--          <hr>-->
-<!--          <p><b>President : </b> <span class="ps-2">Alka Kumari</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">6397882598</span></p>-->
-<!--        </div>-->
-
-
-
-<!--</div>-->
-<!--<div class="corm-iteml">-->
-
-<!--<div class="shadowd px-4 py-3">-->
-<!--          <div class="district-name">-->
-<!--            <p>Mau</p>-->
-<!--          </div>-->
-<!--          <h4>Cricket Association Mau</h4>-->
-<!--          <p><b>Secretary : </b> <span class="ps-2"> Nasiruddin</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">9260929778</span></p>-->
-<!--          <hr>-->
-<!--          <p><b>President : </b> <span class="ps-2">Harinath Singh</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">7007539209</span></p>-->
-<!--        </div>-->
-
-
-<!--</div>-->
-<!--<div class="corm-iteml">-->
-<!--<div class="shadowd px-4 py-3">-->
-<!--          <div class="district-name">-->
-<!--            <p>Gonda</p>-->
-<!--          </div>-->
-<!--          <h4>Gonda cricket association</h4>-->
-<!--          <p><b>Secretary : </b> <span class="ps-2"> Rashid Khan</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">9918507152</span></p>-->
-<!--          <hr>-->
-<!--          <p><b>President : </b> <span class="ps-2">Vivek</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">9415772723</span></p>-->
-<!--        </div>-->
-
-
-
-<!--</div>-->
-<!--<div class="corm-iteml">-->
-
-<!--<div class="shadowd px-4 py-3">-->
-<!--          <div class="district-name">-->
-<!--            <p>Shravasti</p>-->
-<!--          </div>-->
-<!--          <h4>Shravasti Cricket Association</h4>-->
-<!--          <p><b>Secretary : </b> <span class="ps-2"> Rahul Saxena</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">8299046410</span></p>-->
-<!--          <hr>-->
-<!--          <p><b>President : </b> <span class="ps-2">Deepmala Saxena</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">9336005049</span></p>-->
-<!--        </div>-->
-
-
-<!--</div>-->
-<!--<div class="corm-iteml">-->
-
-<!--<div class="shadowd px-4 py-3">-->
-<!--          <div class="district-name">-->
-<!--            <p>Amroha</p>-->
-<!--          </div>-->
-<!--          <h4> District  Cricket Association Amroha</h4>-->
-<!--          <p><b>Secretary : </b> <span class="ps-2"> Mohammed Ali </span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">9720244786</span></p>-->
-<!--          <hr>-->
-<!--          <p><b>President : </b> <span class="ps-2">Khurram Azad Khan</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">9690680001</span></p>-->
-          
-<!--        </div>-->
-
-
-<!--</div>-->
-<!--<div class="corm-iteml">-->
-<!--<div class="shadowd px-4 py-3">-->
-<!--          <div class="district-name">-->
-<!--            <p>Balrampur</p>-->
-<!--          </div>-->
-<!--          <h4>Balrampur Cricket Association</h4>-->
-<!--          <p><b>Secretary : </b> <span class="ps-2"> Mohammed Imran</span></p>-->
-<!--          <p><b>Mobile No : </b> <span class="ps-2">9580322505</span></p>-->
-          
-<!--        </div>-->
-
-
-
-<!--</div>-->
-         
-
-
-
-            </div>
-
-        </div>
 
     </div>
 
 </section>
 <script>
-        function Random() {
-            let value = 0;
-            const day = new Date().getDay()
-            let  itsRun =localStorage.getItem("ItsRun");
-            if(!itsRun){
-                localStorage.setItem("ItsRun","False");
-                itsRun = "False";
-            }
+  function Random() {
+    let value = 0;
+    const day = new Date().getDay()
+    let itsRun = localStorage.getItem("ItsRun");
+    if (!itsRun) {
+      localStorage.setItem("ItsRun", "False");
+      itsRun = "False";
+    }
 
-      if (day === 1 && itsRun == "False") {
-                localStorage.setItem("ItsRun","True");
-                value = Math.floor(Math.random() * (400000 - 300000 + 1) + 300000);
-            }else if(day != 1){
-              localStorage.setItem("ItsRun","False");  
-            }
-            return value;
-        }
+    if (day === 1 && itsRun == "False") {
+      localStorage.setItem("ItsRun", "True");
+      value = Math.floor(Math.random() * (400000 - 300000 + 1) + 300000);
+    } else if (day != 1) {
+      localStorage.setItem("ItsRun", "False");
+    }
+    return value;
+  }
 
-        let randomValue = Random()
-        let another = 0;
-        let sum = randomValue + another;
-        
+  let randomValue = Random()
+  let another = 0;
+  let sum = randomValue + another;
 
-        
-        if (localStorage.getItem("Mon")) {
-            let existingValue = parseInt(localStorage.getItem("Mon"));
-            existingValue += sum;
-            console.log(existingValue)
- 
-           
-            localStorage.setItem("Mon", existingValue.toString());
-            document.getElementById("count0").innerText = existingValue;
-            
 
-        } else {     
-            
-            localStorage.setItem("Mon", sum.toString());
-            document.getElementById("count0").innerText = sum;
-            
-        }
-    </script>
-    
+
+  if (localStorage.getItem("Mon")) {
+    let existingValue = parseInt(localStorage.getItem("Mon"));
+    existingValue += sum;
+    console.log(existingValue)
+
+
+    localStorage.setItem("Mon", existingValue.toString());
+    document.getElementById("count0").innerText = existingValue;
+
+
+  } else {
+
+    localStorage.setItem("Mon", sum.toString());
+    document.getElementById("count0").innerText = sum;
+
+  }
+</script>
+
 @endsection

@@ -22,6 +22,7 @@ class PhotoController extends Controller
     // add photos //
     public function addPhotos(Request $request)
     {
+        // dd($request->all());
         $request->validate([
             'title' => "required|unique:image_captions",
             'date' => "required",
@@ -55,10 +56,10 @@ class PhotoController extends Controller
                 $data = imageCaption::select('id', 'title', 'date', 'status')->orderBy('id','desc')->get();
                 return Datatables::of($data)
                     ->addColumn('action', function ($row) {
-                        $btn = '<a href="editPhotos' . $row->id . '" ><i class="fa fa-edit" style="font-size:20px;color:#414189; margin:1rem"></i></a>';
-                        $btnDelete = '<a href="#" onClick = "deleteData(\'' . $row->id . '\')"><i class="fa fa-trash" style="font-size:20px;color:#f5325c"></i></a>';
-                        $btnView = '<a href="#" onClick = "imageData(\'' . $row->id . '\')"><i class="fa fa-eye" style="font-size:20px;color:#414189;margin:24px;"></i></a>';
-                        $btnAdd = ' <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" onClick="addImg(\'' . $row->id . '\')"><i class="fa fa-plus"></i> </button>';
+                        $btn = '<a href="editPhotos' . $row->id . '" ><i class="fa fa-edit"></i></a>';
+                        $btnDelete = ' <a href="#" class="text-denger" onClick = "deleteData(\'' . $row->id . '\')"><i class="fa fa-trash" style="color:#f5325c"></i></a>';
+                        $btnView = ' <a href="#" onClick = "imageData(\'' . $row->id . '\')"><i class="fa fa-eye"></i></a>';
+                        $btnAdd = ' <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#myModal" onClick="addImg(\'' . $row->id . '\')"><i class="fa fa-plus"></i> </button>';
                         return $btn . '' . $btnDelete . '' . $btnView . '' . $btnAdd;
                     })
                     ->addColumn('status', function ($row) {

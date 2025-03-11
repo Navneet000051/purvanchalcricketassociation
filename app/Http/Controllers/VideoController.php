@@ -64,8 +64,8 @@ class VideoController extends Controller
                         return $btn;
                     })
                     ->addColumn('action', function ($row) {
-                        $btn = '<a href="editVideo' . $row->id . '" ><i class="fa fa-edit" style="font-size:20px;color:#414189; margin:1rem"></i></a>';
-                        $btnDelete = '<a href="#" onClick = "deleteData(\'' . $row->id . '\')"><i class="fa fa-trash" style="font-size:20px;color:#f5325c"></i></a>';
+                        $btn = '<a href="editVideo' . $row->id . '" ><i class="fa fa-edit"></i></a>';
+                        $btnDelete = ' <a href="#" onClick = "deleteData(\'' . $row->id . '\')"><i class="fa fa-trash" style="color:#f5325c"></i></a>';
                         return $btn . '' . $btnDelete;
                     })
                     ->addIndexColumn()

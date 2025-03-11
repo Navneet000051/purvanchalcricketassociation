@@ -36,7 +36,7 @@
             <div class="page-title-right">
                 <ol class="breadcrumb m-0">
                     <li class="breadcrumb-item">
-                        <a href="javascript: void(0);">Admin</a>
+                        <a href="javascript: void(0);">Adminn</a>
                     </li>
                     <li class="breadcrumb-item active"></li>
                 </ol>
@@ -49,7 +49,7 @@
     <div class="col-md-12 ">
         <div class="card ">
             <div class="card-header">
-                <a href="{{url('blog')}}" class="btn btn-primary right">Add News</a>
+                <a href="{{url('blog')}}" class="btn btn-primary right">Addd News</a>
             </div>
         </div>
 

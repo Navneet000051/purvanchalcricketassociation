@@ -3,21 +3,13 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\admin\DashboardController;
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\admin\BrandController;
-use App\Http\Controllers\admin\ProductController;
 use App\Http\Controllers\admin\ProfileController;
 use App\Http\Controllers\AmendmentController;
-use App\Http\Controllers\BlogController;
 use App\Http\Controllers\EmailController;
 use App\Http\Controllers\frontend\HomeController;
-use App\Http\Controllers\ManageUserController;
 use App\Http\Controllers\NewsController;
-use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\PhotoController;
-use App\Http\Controllers\TagController;
 use App\Http\Controllers\VideoController;
-use App\Http\Middleware\AdminPanelMiddleware; 
 use App\Http\Controllers\UnitController;
 use App\Http\Controllers\DirectorController;
 
@@ -47,45 +39,6 @@ Route::group(['middleware' => ['admin_auth']], function () {
 
 Route::get('/logout_admin',[LoginController::class,'logoutAdmin']);
 Route::get('/dashboard',[DashboardController::class,'index']);
-
-
-
-
-
-
-
-Route::get('/payment_form',[PaymentController::class,'index']);
-Route::post('/payment_save',[PaymentController::class,'savePayment']);
-
-// Route::get('User',[ManageUserController::class,'index']);
-// Route::get('Adduser',[ManageUserController::class,'Adduser']);
-// Route::post('get_city',[ManageUserController::class,'get_city']);
-// Route::post('insertUser',[ManageUserController::class,'insertUser']);
-// Route::get('edit_city/{id}',[ManageUserController::class,'editCity']);
-// Route::get('edit_user/{id}',[ManageUserController::class,'editUser'])->name('edit_user');
-// Route::post('update_user',[ManageUserController::class,'updateUser'])->name('update_user');
-// Route::get('delete_user/{id}',[ManageUserController::class,'deleteUser'])->name('delete_user');
-
-Route::get('blog',[BlogController::class,'index']);
-Route::post('addBlog',[BlogController::class,'addBlog']);
-Route::get('showBlog',[BlogController::class,'showBlog']);
-Route::get('editBlog/{id}',[BlogController::class,'editBlog'])->name('edit_blog');
-Route::post('updateBlog',[BlogController::class,'updateBlog'])->name('update_Blog');
-Route::get('deleteBlog/{id}',[BlogController::class,'deleteBlog'])->name('delete_blog');
-
-Route::get('category',[CategoryController::class,'index']);
-Route::post('addCategory',[CategoryController::class,'addCategory']);
-Route::get('showCategory',[CategoryController::class,'showCategory']);
-Route::get('editCategory{id}',[CategoryController::class,'editCategory']);
-Route::post('updateCategory',[CategoryController::class,'updateCategory']);
-Route::get('deleteCategory{id}',[CategoryController::class,'deleteCategory']);
-
-Route::get('tag',[TagController::class,'index']);
-Route::post('addTag',[TagController::class,'addTag']);
-Route::get('showTag',[TagController::class,'showTag']);
-Route::get('editTag{id}',[TagController::class,'editTag']);
-Route::post('updateTag',[TagController::class,'updateTag']);
-Route::get('deleteTag{id}',[TagController::class,'deleteTag']);
 
 Route::get('amendment',[AmendmentController::class,'index']);
 Route::post('addAmendment',[AmendmentController::class,'addAmendment']);

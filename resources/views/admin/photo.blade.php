@@ -1,88 +1,32 @@
 @extends('layout.main-template')
 @section('content')
 <title>{{ $title }}</title>
-
-<style>
-  .right {
-    float: right;
-  }
-  
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-</style>
-
-<div class="row">
-  <div class="col-12">
-    <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-      <h4 class="mb-sm-0"></h4>
-      <div class="page-title-right">
-        <ol class="breadcrumb m-0">
-          <li class="breadcrumb-item">
-            <a href="javascript: void(0);">Admin</a>
-          </li>
-          <li class="breadcrumb-item active"></li>
-        </ol>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="row">
   @if($edit_caption)
   <div class="col-md-12 ">
     <div class="card ">
       <div class="card-header">
-        <a href="{{url('photo')}}" class="btn btn-primary right">Add Photo</a>
+        <a href="{{url('photo')}}" class="btn btn-primary float-end">Add Photo</a>
       </div>
     </div>
   </div>
-  @else
-  <div></div>
   @endif
   <div class="col-md-12 ">
     <div class="card">
       <div class="card-body">
         <div class="live-preview">
-          @if($edit_caption)
-          <form action="{{url('updatePhotos')}}" class="form-control" id="form1" name="form1" method="post" enctype="multipart/form-data">
+      
+          <form action="{{url(!empty($edit_caption)?'updatePhotos' : 'addPhotos')}}" class="form-control" id="form1" name="form1" method="post" enctype="multipart/form-data">
             <div class="card">
               <div class="card-header align-items-center d-flex card-primary">
-                <h4 class="card-title mb-0 flex-grow-1">Edit Photo</h4>
+                <h4 class="card-title mb-0 flex-grow-1">{{(!empty($edit_caption)?'Edit' : 'Add')}} Photo</h4>
               </div>
             </div>
-            @else
-            <form action="{{url('addPhotos')}}" class="form-control" id="form1" name="form1" method="post" enctype="multipart/form-data">
-              <div class="card">
-                <div class="card-header align-items-center d-flex card-primary">
-                  <h4 class="card-title mb-0 flex-grow-1">Add Photo</h4>
-                </div>
-              </div>
-              @endif
+           
               @csrf
               <div class="row g-3">
                 <input type="hidden" name="id" id="id">
-                <div class="col-lg-10">
+                <div class="col-lg-12">
                   <label>Title <span class="text-danger">*</span></label>
                   <input type="hidden" class="form-control" id="id" name="id" value="{{$edit_caption ?$edit_caption->id : ''}}">
                   <input type="text" class="form-control" id="title" name="title" value="{{old('title',$edit_caption ?$edit_caption->title : '')}}" placeholder="Enter title">
@@ -120,26 +64,26 @@
 </div>
 <div class="row">
   <div class="col-md-12 ">
-    <div class="card">
-      <div class="card-body">
-        <div class="live-preview">
-          <div class="card">
-            <div class="card-header align-items-center d-flex card-primary">
-              <h4 class="card-title mb-0 flex-grow-1">Photo List</h4>
-            </div>
-          </div>
-        </div>
-        <table class="table table-bordered data-table" id="category_dtable">
-          <thead>
+  <div class="live-preview">
+    <div class="card p-3">
+      <div class="card-header align-items-center d-flex card-primary">
+        <h4 class="card-title mb-0 flex-grow-1">Photo List</h4>
+      </div>
+      <div class="card-body px-0">
+        <table class="table table-bordered table-striped w-100" id="category_dtable">
+          <thead class="bg-primary text-white">
             <tr>
               <th>Sr no</th>
-              <th>Title</th>
+              <th class="w-50">Title</th>
               <th>Date</th>
               <th>Status</th>
-              <th>Action</th>
+              <th class="w-20">Action</th>
             </tr>
           </thead>
         </table>
+     
+        </div>
+
       </div>
     </div>
   </div>

@@ -53,8 +53,8 @@ class AmendmentController extends Controller
                 $data = amendment::select('id', 'name', 'designation', 'image', 'status')->orderBy('id','desc')->get();
                 return Datatables::of($data)
                     ->addColumn('action', function ($row) {
-                        $btn = '<a href="editAmendment' . $row->id . '" ><i class="fa fa-edit" style="font-size:20px;color:#414189; margin:1rem"></i></a>';
-                        $btnDelete = '<a href="#" onClick = "deleteData(\'' . $row->id . '\')"><i class="fa fa-trash" style="font-size:20px;color:#f5325c"></i></a>';
+                        $btn = '<a href="editAmendment' . $row->id . '" ><i class="fa fa-edit"></i></a>';
+                        $btnDelete = ' <a href="#" onClick = "deleteData(\'' . $row->id . '\')"><i class="fa fa-trash" style="color:#f5325c"></i></a>';
                         return $btn . '' . $btnDelete;
                     })
                     ->addColumn('image', function ($row) {

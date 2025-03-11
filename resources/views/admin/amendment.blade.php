@@ -6,21 +6,7 @@
     float: right;
   }
 </style>
-<div class="row">
-  <div class="col-12">
-    <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-      <h4 class="mb-sm-0"></h4>
-      <div class="page-title-right">
-        <ol class="breadcrumb m-0">
-          <li class="breadcrumb-item">
-            <a href="javascript: void(0);">Admin</a>
-          </li>
-          <li class="breadcrumb-item active"></li>
-        </ol>
-      </div>
-    </div>
-  </div>
-</div>
+
 <div class="row">
   @if($edit_amendment)
   <div class="col-md-12 ">
@@ -76,14 +62,14 @@
                   <span style="color:red">@error('date'){{ $message}} @enderror</span>
                 </div>
 
-                <div class="col-lg-10">
+                <div class="col-lg-12">
                   <label>Description </label>
                   <textarea class="form-control" type="text" id="description" name="description" value="{{old('description' )}}">{{old('description' )}}{{$edit_amendment ? $edit_amendment->description : ''}}</textarea>
                   <div id="editorError" class="error-message" style="color:red"></div>
                   <span style="color:red">@error('description'){{ $message}} @enderror</span>
                 </div>
 
-                <div class="col-lg-10">
+                <div class="col-lg-12">
                   <label for="file">Upload Image <span class="text-danger">*</span></label>
                   @if($edit_amendment)
                   <input type="file" class="form-control " id="imageS" name="imageS" value="{{old('image',$edit_amendment ? $edit_amendment->image : '')}}" accept="image/png, image/jpeg,image/jpg">
@@ -120,8 +106,8 @@
           </div>
         </div>
 
-        <table class="table table-bordered data-table" id="category_dtable">
-          <thead>
+        <table class="table table-bordered table-striped w-100" id="category_dtable">
+          <thead class="bg-primary text-white">
             <tr>
 
               <th>Sr no</th>
@@ -178,16 +164,11 @@
     $('#deleteId').attr("href", "deleteAmendment" + id)
   }
   $(document).ready(function($) {
+    
     CKEDITOR.replace('description');
 
     function validateEditorContent() {
       var editorContent = CKEDITOR.instances.description.getData();
-
-      /* if (editorContent.trim() === '') {
-        $('#editorError').text('Description required');
-        return false;
-      }*/
-      
       
       $('#editorError').text('')
       return true;

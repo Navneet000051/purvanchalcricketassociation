@@ -65,11 +65,12 @@
                   <input type="text" class="form-control" id="name" name="name" value="{{old('name',$edit_directors ? $edit_directors->name: '')}}" placeholder="Enter name">
                   <span style="color:red">@error('name'){{ $message}} @enderror</span>
                 </div>
+                <div class="col-md-4 mt-4">
+                <button class="btn btn-primary mt-3" type="submit">Submit</button>
+              </div>
               </div>
               <br>
-              <div class="col-md-4">
-                <button class="btn btn-primary " type="submit">Submit</button>
-              </div>
+              
             </form>
         </div>
       </div>
